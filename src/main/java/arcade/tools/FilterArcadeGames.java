@@ -10,6 +10,7 @@ import arcade.parsers.CatverIniFile;
 import arcade.parsers.EmulatorCfgFile;
 import arcade.parsers.LogiqxDataFile;
 import arcade.parsers.MameXmlFile;
+import arcade.util.Util;
 
 public class FilterArcadeGames {
 
@@ -154,6 +155,14 @@ public class FilterArcadeGames {
 		}
 	}
 
+	/**
+	 * @param xmlFile
+	 * @param oldFormat
+	 *            Indicates if the xml file is old format (mame versions older than
+	 *            0.94)
+	 * @param emulator
+	 * @throws Exception
+	 */
 	public void mame(String xmlFile, boolean oldFormat, String emulator) throws Exception {
 		MameXmlFile xml = new MameXmlFile();
 		List<Machine> games;
@@ -190,10 +199,15 @@ public class FilterArcadeGames {
 
 	}
 
+	public void printAMList() {
+		this.printAMList(null);
+	}
+
 	/**
 	 * Print AM romlist based on the filters set.
 	 */
-	public void printAMList() {
+	public void printAMList(String fileName) {
+		String contents = "";
 		for (Map.Entry<String, Machine> entry : this.machines.entrySet()) {
 			Machine m = this.machines.get(entry.getKey());
 			String description = m.getDescription();
@@ -205,9 +219,29 @@ public class FilterArcadeGames {
 			if (this.ecf.getEmulator(m.getName()) != null) {
 				emulator = this.ecf.getEmulator(m.getName()).replace("\"", "");
 			}
-			System.out.println(m.getName() + ";" + description + ";" + emulator + ";;" + m.getYear() + ";"
-					+ m.getManufacturer() + ";" + m.getCategory() + ";;;;;;;;;;");
+			contents += m.getName() + ";" + description + ";" + emulator + ";;" + m.getYear() + ";"
+					+ m.getManufacturer() + ";" + m.getCategory() + ";;;;;;;;;;\n";
 		}
+		System.out.println(contents);
+		if (fileName != null) {
+			Util.write(fileName, contents);
+		}
+	}
+
+	/**
+	 * @throws Exception
+	 */
+	public void generateArcadeClassicsByManufacturers() throws Exception {
+		String[] manufacturers = { "banpresto", "capcom", "data east", "irem", "jaleco", "kaneko", "konami", "midway",
+				"namco", "nintendo", "sega", "taito", "tecmo", "williams" };
+		for (String manufacturer : manufacturers) {
+			FilterArcadeGames fag = new FilterArcadeGames();
+			fag.manufacturer = manufacturer;
+			fag.filterCategory = true;
+			fag.generateArcadeClassicsAMList();
+			fag.printAMList("c:/temp/" + manufacturer + ".txt");
+		}
+
 	}
 
 	/**
@@ -217,15 +251,14 @@ public class FilterArcadeGames {
 		this.finalBurnAlpha("fba.dat", "lr-fbalpha");
 		this.mame("mame078.xml", true, "lr-mame2003");
 		this.mame("mame139.xml", true, "lr-mame2010");
-
-		this.printAMList();
 	}
 
 	public static void main(String[] args) throws Exception {
 		FilterArcadeGames fag = new FilterArcadeGames();
-		fag.manufacturer = "capcom";
 		fag.filterCategory = true;
 		fag.generateArcadeClassicsAMList();
+		fag.printAMList();
+
 	}
 
 }

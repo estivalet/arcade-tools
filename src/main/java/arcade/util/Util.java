@@ -1,10 +1,12 @@
 package arcade.util;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -231,6 +233,64 @@ public class Util {
 		}
 
 		return out.toString();
+	}
+
+	public static void write(String fullPath, String contents) {
+		// Extract base path and file name.
+		String basePath = fullPath.substring(0, fullPath.lastIndexOf("/"));
+		String fileName = fullPath.substring(fullPath.lastIndexOf("/") + 1);
+		write(basePath, fileName, contents);
+	}
+
+	public static void write(String basePath, String fileName, String contents) {
+		BufferedWriter bw = null;
+		try {
+			createDir(basePath);
+			File f = new File(basePath + "/" + fileName);
+			f.createNewFile();
+			bw = new BufferedWriter(new FileWriter(basePath + "/" + fileName));
+			bw.write(contents);
+			bw.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				bw.close();
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	public static boolean createDir(String dir) {
+		return createDir(dir, false);
+	}
+
+	public static boolean createDir(String dir, boolean deleteContents) {
+		File f = new File(dir);
+		if (deleteContents) {
+			deleteDir(f);
+		}
+		return f.mkdirs();
+	}
+
+	// Deletes all files and subdirectories under dir.
+	// Returns true if all deletions were successful.
+	// If a deletion fails, the method stops attempting to delete and returns
+	// false.
+	public static boolean deleteDir(File dir) {
+		if (dir.isDirectory()) {
+			String[] children = dir.list();
+			for (int i = 0; i < children.length; i++) {
+				boolean success = deleteDir(new File(dir, children[i]));
+				if (!success) {
+					return false;
+				}
+			}
+		}
+
+		// The directory is now empty so delete it
+		return dir.delete();
 	}
 
 	public static void main(String[] args) throws Exception {
