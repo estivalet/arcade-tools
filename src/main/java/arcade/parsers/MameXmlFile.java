@@ -1,6 +1,7 @@
 package arcade.parsers;
 
 import java.io.InputStream;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
@@ -12,11 +13,27 @@ import arcade.domain.Mame094;
 public class MameXmlFile {
 
 	/**
+	 * Find a working clone for a parent.
+	 * 
+	 * @param parent
+	 * @return
+	 * @throws Exception
+	 */
+	public Machine findWorkingClone(List<Machine> machines, String parent) throws Exception {
+		for (Machine m : machines) {
+			if (m.getCloneof() != null && m.getCloneof().equals(parent) && m.getDriver().getStatus().equals("good")) {
+				return m;
+			}
+		}
+		return null;
+	}
+
+	/**
 	 * @param fileName
 	 * @return
 	 * @throws Exception
 	 */
-	private Mame094 parseOld(String fileName) throws Exception {
+	public Mame094 parseOld(String fileName) throws Exception {
 		JAXBContext jaxbContext = JAXBContext.newInstance(Mame094.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		InputStream is = HistoryDatFile.class.getResourceAsStream("/arcade-files/" + fileName);

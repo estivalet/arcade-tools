@@ -3,6 +3,10 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import arcade.domain.MameInfo;
 
 /**
  * 
@@ -11,6 +15,15 @@ import java.io.InputStreamReader;
  *
  */
 public class HistoryDatFile {
+
+	private List<MameInfo> games;
+
+	/**
+	 * @return the games
+	 */
+	public List<MameInfo> getGames() {
+		return games;
+	}
 
 	/**
 	 * Parse history.dat file from
@@ -27,6 +40,8 @@ public class HistoryDatFile {
 		String rom = "";
 		boolean info = false;
 
+		this.games = new ArrayList<MameInfo>();
+
 		while (br.ready()) {
 			line = br.readLine().trim();
 			if (line.startsWith("$info")) {
@@ -39,8 +54,10 @@ public class HistoryDatFile {
 				info = false;
 				String[] roms = rom.split(",");
 				for (String r : roms) {
-					System.out.println(r);
-					System.out.println(history);
+					MameInfo mi = new MameInfo();
+					mi.setRom(r);
+					mi.setHistory(history);
+					games.add(mi);
 				}
 			}
 			if (!line.startsWith("$bio")) {
@@ -53,6 +70,10 @@ public class HistoryDatFile {
 	public static void main(String[] args) throws Exception {
 		HistoryDatFile hf = new HistoryDatFile();
 		hf.parse();
+
+		for (MameInfo entry : hf.getGames()) {
+			System.out.println(entry.getRom() + " = " + entry.getHistory());
+		}
 	}
 
 }

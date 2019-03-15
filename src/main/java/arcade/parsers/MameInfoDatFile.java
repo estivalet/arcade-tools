@@ -3,8 +3,21 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import arcade.domain.MameInfo;
 
 public class MameInfoDatFile {
+
+	private List<MameInfo> games;
+
+	/**
+	 * @return the games
+	 */
+	public List<MameInfo> getGames() {
+		return games;
+	}
 
 	/**
 	 * 
@@ -21,6 +34,8 @@ public class MameInfoDatFile {
 		String rom = null;
 		boolean driver = false;
 		boolean mame = false;
+
+		this.games = new ArrayList<MameInfo>();
 
 		// Read file line per line.
 		while (br.ready()) {
@@ -40,7 +55,10 @@ public class MameInfoDatFile {
 			} else if (line.startsWith("$end")) {
 				// Update info of games.
 				if (mame) {
-					System.out.println(rom);
+					MameInfo mi = new MameInfo();
+					mi.setRom(rom);
+					mi.setInfo(info);
+					games.add(mi);
 				} else if (driver) {
 				}
 			}
@@ -52,6 +70,11 @@ public class MameInfoDatFile {
 	public static void main(String[] args) throws Exception {
 		MameInfoDatFile mif = new MameInfoDatFile();
 		mif.parse();
+
+		for (MameInfo entry : mif.getGames()) {
+			System.out.println(entry.getRom() + " = " + entry.getInfo());
+		}
+
 	}
 
 }

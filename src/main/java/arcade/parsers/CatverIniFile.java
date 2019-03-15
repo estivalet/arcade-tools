@@ -3,8 +3,44 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.MameInfo;
 
 public class CatverIniFile {
+
+	private Map<String, MameInfo> games = new HashMap<String, MameInfo>();
+
+	/**
+	 * @return the games
+	 */
+	public Map<String, MameInfo> getGames() {
+		return games;
+	}
+
+	/**
+	 * @param game
+	 * @return
+	 */
+	public String getCategory(String game) {
+		if (this.games.get(game) == null) {
+			return "";
+		}
+		return this.games.get(game).getCategory();
+	}
+
+	/**
+	 * @param game
+	 * @return
+	 */
+	public String getVerAdded(String game) {
+		if (this.games.get(game) == null) {
+			return "";
+		}
+		return this.games.get(game).getVerAdded();
+	}
 
 	/**
 	 * Parse catver.ini file from http://www.progettosnaps.net/catver/ (all in one
@@ -43,13 +79,26 @@ public class CatverIniFile {
 				// depending of current section.
 				String[] values = line.split("=");
 
+				MameInfo mi = null;
 				if (category) {
-					// System.out.println(values[0].trim());
-					// System.out.println(values[1].trim());
+					// System.out.println(values[0].trim() + " = " + values[1].trim());
+					if (games.get(values[0].trim()) == null) {
+						mi = new MameInfo();
+						mi.setRom(values[0].trim());
+					} else {
+						mi = games.get(values[0].trim());
+					}
+					mi.setCategory(values[1].trim());
 				} else if (verAdded) {
-					// System.out.println(values[0].trim());
-					// System.out.println(values[1].trim());
+					if (games.get(values[0].trim()) == null) {
+						mi = new MameInfo();
+						mi.setRom(values[0].trim());
+					} else {
+						mi = games.get(values[0].trim());
+					}
+					mi.setVerAdded(values[1].trim());
 				}
+				games.put(values[0].trim(), mi);
 
 			}
 		}
@@ -59,6 +108,12 @@ public class CatverIniFile {
 	public static void main(String[] args) throws Exception {
 		CatverIniFile cf = new CatverIniFile();
 		cf.parse();
+
+		for (Entry<String, MameInfo> entry : cf.getGames().entrySet()) {
+			System.out
+					.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getCategory()));
+		}
+
 	}
 
 }

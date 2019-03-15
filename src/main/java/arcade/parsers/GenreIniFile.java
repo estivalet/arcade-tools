@@ -3,8 +3,22 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.MameInfo;
 
 public class GenreIniFile {
+
+	private Map<String, MameInfo> games = new HashMap<String, MameInfo>();
+
+	/**
+	 * @return the games
+	 */
+	public Map<String, MameInfo> getGames() {
+		return games;
+	}
 
 	/**
 	 * Parse genre.ini from http://www.progettosnaps.net/catver/ (all in one
@@ -31,9 +45,10 @@ public class GenreIniFile {
 
 			if (line.startsWith("[")) {
 				genre = line.substring(1, line.indexOf("]"));
-			}
-			if (!line.isEmpty()) {
-				System.out.println(line);
+			} else if (!line.equals("")) {
+				MameInfo mi = new MameInfo();
+				mi.setGenre(genre);
+				games.put(line, mi);
 			}
 		}
 		br.close();
@@ -42,5 +57,10 @@ public class GenreIniFile {
 	public static void main(String[] args) throws Exception {
 		GenreIniFile gif = new GenreIniFile();
 		gif.parse();
+
+		for (Entry<String, MameInfo> entry : gif.getGames().entrySet()) {
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getGenre()));
+		}
+
 	}
 }

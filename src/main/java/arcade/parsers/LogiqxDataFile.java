@@ -78,13 +78,13 @@ public class LogiqxDataFile {
 	public LogiqxDataFile parse(String fileName) throws Exception {
 		JAXBContext jaxbContext = JAXBContext.newInstance(LogiqxDataFile.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		InputStream is = HistoryDatFile.class.getResourceAsStream("/arcade-files/" + fileName);
+		InputStream is = HistoryDatFile.class.getResourceAsStream(fileName);
 		return (LogiqxDataFile) jaxbUnmarshaller.unmarshal(is);
 	}
 
 	public static void main(String[] args) throws Exception {
 		LogiqxDataFile ldf = new LogiqxDataFile();
-		LogiqxDataFile dat = ldf.parse("FB Alpha (ClrMame Pro XML, Arcade only).dat");
+		LogiqxDataFile dat = ldf.parse("/arcade-files/FB Alpha (ClrMame Pro XML, Arcade only).dat");
 		for (LogiqxGame game : dat.games) {
 			System.out.println(game.getName());
 

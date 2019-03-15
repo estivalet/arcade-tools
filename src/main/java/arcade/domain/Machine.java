@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 @XmlType(name = "", propOrder = { "description", "year", "manufacturer", "gameManufacturer", "biosset", "rom", "disk",
 		"deviceRef", "sample", "chip", "display", "sound", "input", "dipswitch", "configuration", "port", "adjuster",
 		"driver", "device", "slot", "softwarelist", "ramoption", "platform", "romCatalog", "id", "shortName", "info",
-		"driverInfo", "history", "cheat", "genre", "verAdded", "synopsis", "players" })
+		"driverInfo", "history", "cheat", "genre", "verAdded", "synopsis", "players", "emulator", "category" })
 @XmlRootElement(name = "machine")
 public class Machine {
 
@@ -95,6 +95,8 @@ public class Machine {
 	private String verAdded;
 	private String players;
 	private String synopsis;
+	private String emulator;
+	private String category;
 
 	public void addRom(Rom r) {
 		this.rom.add(r);
@@ -1020,6 +1022,36 @@ public class Machine {
 
 	public boolean isHomebrew() {
 		return this.getDescription().toLowerCase().contains("homebrew");
+	}
+
+	/**
+	 * @return the emulator
+	 */
+	public String getEmulator() {
+		return emulator;
+	}
+
+	/**
+	 * @param emulator
+	 *            the emulator to set
+	 */
+	public void setEmulator(String emulator) {
+		this.emulator = emulator;
+	}
+
+	/**
+	 * @return the category
+	 */
+	public String getCategory() {
+		return category;
+	}
+
+	/**
+	 * @param category
+	 *            the category to set
+	 */
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 }
