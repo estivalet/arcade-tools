@@ -36,6 +36,8 @@ public class FilterArcadeGames {
 
 	private String manufacturer;
 
+	private String romof;
+
 	/**
 	 * @throws Exception
 	 */
@@ -107,6 +109,12 @@ public class FilterArcadeGames {
 		// Check manufacturer
 		if (m.getManufacturer() != null && this.manufacturer != null
 				&& !m.getManufacturer().toLowerCase().contains(this.manufacturer.toLowerCase())) {
+			return false;
+		}
+
+		// Check romof
+		if ((m.getRomof() == null && this.romof != null)
+				|| m.getRomof() != null && !m.getRomof().toLowerCase().contains(this.romof.toLowerCase())) {
 			return false;
 		}
 
@@ -256,6 +264,7 @@ public class FilterArcadeGames {
 	public static void main(String[] args) throws Exception {
 		FilterArcadeGames fag = new FilterArcadeGames();
 		fag.filterCategory = true;
+		fag.romof = "neogeo";
 		fag.generateArcadeClassicsAMList();
 		fag.printAMList();
 
