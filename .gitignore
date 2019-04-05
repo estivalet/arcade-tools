@@ -27,3 +27,4 @@ src/main/resources/arcade-files/*.xml
 target/classes/arcade-files/*.xml
 
 target/*/**
+/target/

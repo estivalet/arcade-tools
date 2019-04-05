@@ -3,8 +3,22 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.Machine;
 
 public class NPlayersIniFile {
+
+	private Map<String, Machine> games = new HashMap<String, Machine>();
+
+	/**
+	 * @return the games
+	 */
+	public Map<String, Machine> getGames() {
+		return games;
+	}
 
 	/**
 	 * Parse nplayers.ini from https://nplayers.arcadebelgium.be/
@@ -29,7 +43,10 @@ public class NPlayersIniFile {
 
 			if (!line.isEmpty()) {
 				String[] tmp = line.split("=");
-				System.out.println(tmp[0] + " = " + tmp[1]);
+				Machine mi = new Machine();
+				mi.setName(tmp[0]);
+				mi.setPlayers(tmp[1]);
+				games.put(line, mi);
 			}
 		}
 		br.close();
@@ -38,6 +55,11 @@ public class NPlayersIniFile {
 	public static void main(String[] args) throws Exception {
 		NPlayersIniFile nif = new NPlayersIniFile();
 		nif.parse();
+
+		for (Entry<String, Machine> entry : nif.getGames().entrySet()) {
+			System.out.println(entry.getKey() + " = " + entry.getValue().getPlayers());
+		}
+
 	}
 
 }

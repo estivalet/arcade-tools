@@ -15,6 +15,12 @@ public class MameInfo {
 	private String genre;
 	private String verAdded;
 	private String history;
+	private boolean mature;
+	private String language;
+	private String series;
+	private String cabinet;
+	private boolean freePlay;
+	private String ranking;
 
 	/**
 	 * @return the rom
@@ -104,6 +110,54 @@ public class MameInfo {
 	 */
 	public void setHistory(String history) {
 		this.history = history;
+	}
+
+	public boolean isMature() {
+		return mature;
+	}
+
+	public void setMature(boolean mature) {
+		this.mature = mature;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public String getSeries() {
+		return series;
+	}
+
+	public void setSeries(String series) {
+		this.series = series;
+	}
+
+	public String getCabinet() {
+		return cabinet;
+	}
+
+	public void setCabinet(String cabinets) {
+		this.cabinet = cabinets;
+	}
+
+	public boolean isFreePlay() {
+		return freePlay;
+	}
+
+	public void setFreePlay(boolean freePlay) {
+		this.freePlay = freePlay;
+	}
+
+	public String getRanking() {
+		return ranking;
+	}
+
+	public void setRanking(String ranking) {
+		this.ranking = ranking;
 	}
 
 }

@@ -3,8 +3,21 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.MameInfo;
 
 public class BestgamesIniFile {
+	private Map<String, MameInfo> games = new HashMap<String, MameInfo>();
+
+	/**
+	 * @return the games
+	 */
+	public Map<String, MameInfo> getGames() {
+		return games;
+	}
 
 	/**
 	 * Parse bestgames.ini from http://www.progettosnaps.net/bestgames/
@@ -33,6 +46,10 @@ public class BestgamesIniFile {
 					System.out.println(ranking);
 				} else {
 					System.out.println(line);
+					MameInfo mi = new MameInfo();
+					mi.setRanking(ranking);
+					games.put(line, mi);
+
 				}
 			}
 		}
@@ -42,6 +59,11 @@ public class BestgamesIniFile {
 	public static void main(String[] args) throws Exception {
 		BestgamesIniFile bif = new BestgamesIniFile();
 		bif.parse();
+
+		for (Entry<String, MameInfo> entry : bif.getGames().entrySet()) {
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getRanking()));
+		}
+
 	}
 
 }

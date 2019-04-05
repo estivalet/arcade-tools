@@ -3,12 +3,25 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.MameInfo;
 
 public class MatureIniFile {
 
+	private Map<String, MameInfo> games = new HashMap<String, MameInfo>();
+
 	/**
-	 * Parse mature.ini files from http://www.progettosnaps.net/catver/ (all in one
-	 * download file e.g: pS_CatVer_200.7z)
+	 * @return the games
+	 */
+	public Map<String, MameInfo> getGames() {
+		return games;
+	}
+
+	/**
+	 * Parse mature.ini files from http://www.progettosnaps.net/catver/ (all in one download file e.g: pS_CatVer_200.7z)
 	 * 
 	 * @throws Exception
 	 */
@@ -29,7 +42,9 @@ public class MatureIniFile {
 			line = br.readLine().trim();
 
 			if (!line.isEmpty()) {
-				System.out.println(line);
+				MameInfo mi = new MameInfo();
+				mi.setMature(true);
+				games.put(line, mi);
 			}
 		}
 		br.close();
@@ -38,5 +53,9 @@ public class MatureIniFile {
 	public static void main(String[] args) throws Exception {
 		MatureIniFile mif = new MatureIniFile();
 		mif.parse();
+
+		for (Entry<String, MameInfo> entry : mif.getGames().entrySet()) {
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().isMature()));
+		}
 	}
 }

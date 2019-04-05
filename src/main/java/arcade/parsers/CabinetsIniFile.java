@@ -3,12 +3,25 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.MameInfo;
 
 public class CabinetsIniFile {
 
+	private Map<String, MameInfo> games = new HashMap<String, MameInfo>();
+
 	/**
-	 * Parse cabinets.ini file from http://www.progettosnaps.net/renameset/ (zipped
-	 * file e.g. pS_category_200.zip)
+	 * @return the games
+	 */
+	public Map<String, MameInfo> getGames() {
+		return games;
+	}
+
+	/**
+	 * Parse cabinets.ini file from http://www.progettosnaps.net/renameset/ (zipped file e.g. pS_category_200.zip)
 	 * 
 	 * @throws Exception
 	 */
@@ -33,6 +46,9 @@ public class CabinetsIniFile {
 				cabinet = line.substring(1, line.indexOf("]"));
 			} else if (!line.isEmpty()) {
 				System.out.println(line + " = " + cabinet);
+				MameInfo mi = new MameInfo();
+				mi.setCabinet(cabinet);
+				games.put(line, mi);
 				// Document cab = new Document().append("cabinets", cabinet);
 			}
 		}
@@ -42,6 +58,11 @@ public class CabinetsIniFile {
 	public static void main(String[] args) throws Exception {
 		CabinetsIniFile cif = new CabinetsIniFile();
 		cif.parse();
+
+		for (Entry<String, MameInfo> entry : cif.getGames().entrySet()) {
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getCabinet()));
+		}
+
 	}
 
 }

@@ -10,6 +10,14 @@ import arcade.domain.Machine;
 import arcade.domain.Mame;
 import arcade.domain.Mame094;
 
+/**
+ * Generate mame.xml: mame -listxml > mame.xml Remove dtd part of the xml and put in a mame.dtd file.
+ * 
+ * Command to generate classes from mame.dtd: xjc -dtd -d . -p glog.domain mame.dtd
+ * 
+ * @author luisoft
+ *
+ */
 public class MameXmlFile {
 
 	/**
@@ -36,7 +44,7 @@ public class MameXmlFile {
 	public Mame094 parseOld(String fileName) throws Exception {
 		JAXBContext jaxbContext = JAXBContext.newInstance(Mame094.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		InputStream is = HistoryDatFile.class.getResourceAsStream("/arcade-files/" + fileName);
+		InputStream is = MameXmlFile.class.getResourceAsStream("/arcade-files/" + fileName);
 		return (Mame094) jaxbUnmarshaller.unmarshal(is);
 	}
 
@@ -50,7 +58,7 @@ public class MameXmlFile {
 	public Mame parse(String fileName) throws Exception {
 		JAXBContext jaxbContext = JAXBContext.newInstance(Mame.class);
 		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		InputStream is = HistoryDatFile.class.getResourceAsStream("/arcade-files/" + fileName);
+		InputStream is = MameXmlFile.class.getResourceAsStream("/arcade-files/" + fileName);
 		return (Mame) jaxbUnmarshaller.unmarshal(is);
 	}
 

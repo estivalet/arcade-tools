@@ -3,8 +3,22 @@ package arcade.parsers;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import arcade.domain.MameInfo;
 
 public class SeriesIniFile {
+
+	private Map<String, MameInfo> games = new HashMap<String, MameInfo>();
+
+	/**
+	 * @return the games
+	 */
+	public Map<String, MameInfo> getGames() {
+		return games;
+	}
 
 	/**
 	 * Parse series.ini file from http://www.progettosnaps.net/series/
@@ -32,6 +46,10 @@ public class SeriesIniFile {
 				series = line.substring(1, line.indexOf("]"));
 			} else if (!line.isEmpty()) {
 				System.out.println(line + " = " + series);
+				MameInfo mi = new MameInfo();
+				mi.setSeries(series);
+				games.put(line, mi);
+
 			}
 		}
 		br.close();
@@ -40,6 +58,11 @@ public class SeriesIniFile {
 	public static void main(String[] args) throws Exception {
 		SeriesIniFile sif = new SeriesIniFile();
 		sif.parse();
+
+		for (Entry<String, MameInfo> entry : sif.getGames().entrySet()) {
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getSeries()));
+		}
+
 	}
 
 }

@@ -22,9 +22,8 @@ public class FilterArcadeGames {
 	private EmulatorCfgFile ecf;
 
 	/** Excluded genres. (Removed "Misc.") */
-	private String[] genresToExclude = { "Casino", "Puzzle", "Slot Machine", "Quiz", "Tabletop", "Mahjong", "Mature",
-			"Pinball", "Board Game", "Chess Machine", "System", "Device", "Cards", "Utilities", "Update",
-			"Game Console", "Computer /", "Rhythm", "MultiGame", "Calculator" };
+	private String[] genresToExclude = { "Casino", "Puzzle", "Slot Machine", "Quiz", "Tabletop", "Mahjong", "Mature", "Pinball", "Board Game", "Chess Machine", "System", "Device", "Cards", "Utilities", "Update", "Game Console",
+			"Computer /", "Rhythm", "MultiGame", "Calculator" };
 
 	private boolean includeClone = false;
 
@@ -107,14 +106,12 @@ public class FilterArcadeGames {
 		}
 
 		// Check manufacturer
-		if (m.getManufacturer() != null && this.manufacturer != null
-				&& !m.getManufacturer().toLowerCase().contains(this.manufacturer.toLowerCase())) {
+		if (m.getManufacturer() != null && this.manufacturer != null && !m.getManufacturer().toLowerCase().contains(this.manufacturer.toLowerCase())) {
 			return false;
 		}
 
 		// Check romof
-		if ((m.getRomof() == null && this.romof != null)
-				|| m.getRomof() != null && !m.getRomof().toLowerCase().contains(this.romof.toLowerCase())) {
+		if ((m.getRomof() == null && this.romof != null) || m.getRomof() != null && !m.getRomof().toLowerCase().contains(this.romof.toLowerCase())) {
 			return false;
 		}
 
@@ -166,8 +163,7 @@ public class FilterArcadeGames {
 	/**
 	 * @param xmlFile
 	 * @param oldFormat
-	 *            Indicates if the xml file is old format (mame versions older than
-	 *            0.94)
+	 *            Indicates if the xml file is old format (mame versions older than 0.94)
 	 * @param emulator
 	 * @throws Exception
 	 */
@@ -227,8 +223,7 @@ public class FilterArcadeGames {
 			if (this.ecf.getEmulator(m.getName()) != null) {
 				emulator = this.ecf.getEmulator(m.getName()).replace("\"", "");
 			}
-			contents += m.getName() + ";" + description + ";" + emulator + ";;" + m.getYear() + ";"
-					+ m.getManufacturer() + ";" + m.getCategory() + ";;;;;;;;;;\n";
+			contents += m.getName() + ";" + description + ";" + emulator + ";;" + m.getYear() + ";" + m.getManufacturer() + ";" + m.getCategory() + ";;;;;;;;;;\n";
 		}
 		System.out.println(contents);
 		if (fileName != null) {
@@ -240,8 +235,7 @@ public class FilterArcadeGames {
 	 * @throws Exception
 	 */
 	public void generateArcadeClassicsByManufacturers() throws Exception {
-		String[] manufacturers = { "banpresto", "capcom", "data east", "irem", "jaleco", "kaneko", "konami", "midway",
-				"namco", "nintendo", "sega", "taito", "tecmo", "williams" };
+		String[] manufacturers = { "banpresto", "capcom", "data east", "irem", "jaleco", "kaneko", "konami", "midway", "namco", "nintendo", "sega", "taito", "tecmo", "williams" };
 		for (String manufacturer : manufacturers) {
 			FilterArcadeGames fag = new FilterArcadeGames();
 			fag.manufacturer = manufacturer;
@@ -259,11 +253,12 @@ public class FilterArcadeGames {
 		this.finalBurnAlpha("fba.dat", "lr-fbalpha");
 		this.mame("mame078.xml", true, "lr-mame2003");
 		this.mame("mame139.xml", true, "lr-mame2010");
+		this.mame("mame.xml", false, "mame");
 	}
 
 	public static void main(String[] args) throws Exception {
 		FilterArcadeGames fag = new FilterArcadeGames();
-		fag.filterCategory = true;
+		// fag.filterCategory = true;
 		fag.romof = "neogeo";
 		fag.generateArcadeClassicsAMList();
 		fag.printAMList();
