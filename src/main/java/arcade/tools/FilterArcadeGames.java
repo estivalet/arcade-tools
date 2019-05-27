@@ -22,8 +22,8 @@ public class FilterArcadeGames {
 	private EmulatorCfgFile ecf;
 
 	/** Excluded genres. (Removed "Misc.") */
-	private String[] genresToExclude = { "Casino", "Puzzle", "Slot Machine", "Quiz", "Tabletop", "Mahjong", "Mature", "Pinball", "Board Game", "Chess Machine", "System", "Device", "Cards", "Utilities", "Update", "Game Console",
-			"Computer /", "Rhythm", "MultiGame", "Calculator" };
+	private String[] genresToExclude = { "Casino", "Puzzle", "Slot Machine", "Quiz", "Tabletop", "Mahjong", "Mature", "Pinball", "Board Game", "Chess Machine",
+			"System", "Device", "Cards", "Utilities", "Update", "Game Console", "Computer /", "Rhythm", "MultiGame", "Calculator" };
 
 	private boolean includeClone = false;
 
@@ -129,10 +129,8 @@ public class FilterArcadeGames {
 
 	/**
 	 * 
-	 * @param xmlFile
-	 *            XML file with the games meta data.
-	 * @param emulator
-	 *            emulator to be used by default for each game.
+	 * @param xmlFile  XML file with the games meta data.
+	 * @param emulator emulator to be used by default for each game.
 	 * @throws Exception
 	 */
 	public void finalBurnAlpha(String xmlFile, String emulator) throws Exception {
@@ -162,8 +160,8 @@ public class FilterArcadeGames {
 
 	/**
 	 * @param xmlFile
-	 * @param oldFormat
-	 *            Indicates if the xml file is old format (mame versions older than 0.94)
+	 * @param oldFormat Indicates if the xml file is old format (mame versions older
+	 *                  than 0.94)
 	 * @param emulator
 	 * @throws Exception
 	 */
@@ -223,7 +221,8 @@ public class FilterArcadeGames {
 			if (this.ecf.getEmulator(m.getName()) != null) {
 				emulator = this.ecf.getEmulator(m.getName()).replace("\"", "");
 			}
-			contents += m.getName() + ";" + description + ";" + emulator + ";;" + m.getYear() + ";" + m.getManufacturer() + ";" + m.getCategory() + ";;;;;;;;;;\n";
+			contents += m.getName() + ";" + description + ";" + emulator + ";;" + m.getYear() + ";" + m.getManufacturer() + ";" + m.getCategory()
+					+ ";;;;;;;;;;\n";
 		}
 		System.out.println(contents);
 		if (fileName != null) {
@@ -235,7 +234,9 @@ public class FilterArcadeGames {
 	 * @throws Exception
 	 */
 	public void generateArcadeClassicsByManufacturers() throws Exception {
-		String[] manufacturers = { "banpresto", "capcom", "data east", "irem", "jaleco", "kaneko", "konami", "midway", "namco", "nintendo", "sega", "taito", "tecmo", "williams" };
+		String[] manufacturers = { "banpresto", "capcom", "data east", "irem", "jaleco", "kaneko", "konami", "midway", "namco", "nintendo", "sega", "taito",
+				"tecmo", "williams" };
+
 		for (String manufacturer : manufacturers) {
 			FilterArcadeGames fag = new FilterArcadeGames();
 			fag.manufacturer = manufacturer;
