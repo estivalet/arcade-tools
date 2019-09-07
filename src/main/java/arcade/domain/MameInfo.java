@@ -21,6 +21,8 @@ public class MameInfo {
 	private String cabinet;
 	private boolean freePlay;
 	private String ranking;
+	/** add to store system name from sysinfo.dat file */
+	private String systemName;
 
 	/**
 	 * @return the rom
@@ -30,8 +32,7 @@ public class MameInfo {
 	}
 
 	/**
-	 * @param rom
-	 *            the rom to set
+	 * @param rom the rom to set
 	 */
 	public void setRom(String rom) {
 		this.rom = rom;
@@ -45,8 +46,7 @@ public class MameInfo {
 	}
 
 	/**
-	 * @param category
-	 *            the category to set
+	 * @param category the category to set
 	 */
 	public void setCategory(String category) {
 		this.category = category;
@@ -60,8 +60,7 @@ public class MameInfo {
 	}
 
 	/**
-	 * @param info
-	 *            the info to set
+	 * @param info the info to set
 	 */
 	public void setInfo(String info) {
 		this.info = info;
@@ -75,8 +74,7 @@ public class MameInfo {
 	}
 
 	/**
-	 * @param verAdded
-	 *            the verAdded to set
+	 * @param verAdded the verAdded to set
 	 */
 	public void setVerAdded(String verAdded) {
 		this.verAdded = verAdded;
@@ -90,8 +88,7 @@ public class MameInfo {
 	}
 
 	/**
-	 * @param genre
-	 *            the genre to set
+	 * @param genre the genre to set
 	 */
 	public void setGenre(String genre) {
 		this.genre = genre;
@@ -105,8 +102,7 @@ public class MameInfo {
 	}
 
 	/**
-	 * @param history
-	 *            the history to set
+	 * @param history the history to set
 	 */
 	public void setHistory(String history) {
 		this.history = history;
@@ -158,6 +154,14 @@ public class MameInfo {
 
 	public void setRanking(String ranking) {
 		this.ranking = ranking;
+	}
+
+	public String getSystemName() {
+		return systemName;
+	}
+
+	public void setSystemName(String systemName) {
+		this.systemName = systemName;
 	}
 
 }

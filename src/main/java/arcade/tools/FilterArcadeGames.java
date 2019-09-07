@@ -160,8 +160,7 @@ public class FilterArcadeGames {
 
 	/**
 	 * @param xmlFile
-	 * @param oldFormat Indicates if the xml file is old format (mame versions older
-	 *                  than 0.94)
+	 * @param oldFormat Indicates if the xml file is old format (mame versions older than 0.94)
 	 * @param emulator
 	 * @throws Exception
 	 */
@@ -263,6 +262,12 @@ public class FilterArcadeGames {
 		fag.romof = "neogeo";
 		fag.generateArcadeClassicsAMList();
 		fag.printAMList();
+
+//		MameXmlFile xml = new MameXmlFile();
+//		Mame mame = xml.parse("mame.xml");
+//		for (Machine m : mame.getMachine()) {
+//			System.out.println(m.getName() + "=" + m.getDescription());
+//		}
 
 	}
 
