@@ -13,6 +13,8 @@ import arcade.domain.Mame094;
 /**
  * Generate mame.xml: mame -listxml > mame.xml Remove dtd part of the xml and put in a mame.dtd file.
  * 
+ * Remove "<!DOCTYPE softwarelists [" from dtd file first line and the "]>" last line of the same file.
+ * 
  * Command to generate classes from mame.dtd: xjc -dtd -d . -p glog.domain mame.dtd
  * 
  * @author luisoft
