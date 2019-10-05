@@ -40,11 +40,11 @@ public class SysInfoDatFile {
 		while (br.ready()) {
 			line = br.readLine().trim();
 			if (line.startsWith("$info")) {
-				rom = line.split("=")[1];
+				rom = line.split("=")[1].replace(",", "");
 				info = "";
-				// skip $bio
-				line = br.readLine().trim();
-				systemName = br.readLine().replaceAll("=", "").trim();
+//				// skip $bio
+//				line = br.readLine().trim();
+//				systemName = br.readLine().replaceAll("=", "").trim();
 			} else if (line.startsWith("$end")) {
 				// Update info of games.
 				MameInfo mi = new MameInfo();
@@ -52,8 +52,10 @@ public class SysInfoDatFile {
 				mi.setInfo(info);
 				mi.setSystemName(systemName);
 				games.add(mi);
+			} else if (line.startsWith("======")) {
+				systemName = line.replaceAll("=", "").trim();
 			}
-			if (!line.startsWith("$bio")) {
+			if (!line.startsWith("$bio") && !line.startsWith("$info")) {
 				info += line + "<br>";
 			}
 		}

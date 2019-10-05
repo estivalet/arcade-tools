@@ -22,6 +22,8 @@ import arcade.domain.GameListGame;
 import arcade.domain.Machine;
 import arcade.domain.Mame;
 import arcade.domain.MameInfo;
+import arcade.domain.SoftwareList2;
+import arcade.domain.Softwarelists;
 import arcade.parsers.BestgamesIniFile;
 import arcade.parsers.CabinetsIniFile;
 import arcade.parsers.CatverIniFile;
@@ -30,6 +32,7 @@ import arcade.parsers.GenreIniFile;
 import arcade.parsers.HistoryDatFile;
 import arcade.parsers.LanguagesIniFile;
 import arcade.parsers.MameInfoDatFile;
+import arcade.parsers.MameSoftwareListXmlFile;
 import arcade.parsers.MameXmlFile;
 import arcade.parsers.MatureIniFile;
 import arcade.parsers.NPlayersIniFile;
@@ -94,6 +97,23 @@ public class ImportMAME2MongoDB {
 		Gson gson = new Gson();
 		for (Machine m : mame.getMachine()) {
 			collection.insertOne(new Document(BasicDBObject.parse(gson.toJson(m))));
+		}
+		mongoClient.close();
+	}
+
+	public static void importSoftwareListXML() throws Exception {
+		System.out.println("Import SoftwareList XML");
+		MongoClient mongoClient = new MongoClient();
+		MongoDatabase database = mongoClient.getDatabase("mamedb");
+		MongoCollection<Document> collection = database.getCollection("softwarelists");
+
+		MameSoftwareListXmlFile xml = new MameSoftwareListXmlFile();
+		Softwarelists softwarelist = xml.parse("softwarelist.xml");
+		Gson gson = new Gson();
+		// not storing Sharedfeat and part to avoid 16MB bson size (see Software xmltransient attributes)
+		for (SoftwareList2 sl : softwarelist.getSoftwarelist()) {
+			System.out.println(sl.getName() + " " + sl.getSoftware().size());
+			collection.insertOne(new Document(BasicDBObject.parse(gson.toJson(sl))));
 		}
 		mongoClient.close();
 	}
@@ -163,7 +183,7 @@ public class ImportMAME2MongoDB {
 		gif.parse();
 
 		for (Entry<String, MameInfo> entry : gif.getGames().entrySet()) {
-			// System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getGenre()));
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getGenre()));
 			collection.updateOne(eq("name", entry.getKey()), new Document("$set", new Document("genre", entry.getValue().getGenre())));
 		}
 
@@ -313,19 +333,20 @@ public class ImportMAME2MongoDB {
 	}
 
 	public static void main(String[] args) throws Exception {
-		// ImportMAME2MongoDB.importListXML();
-		// ImportMAME2MongoDB.importHistory();
-		// ImportMAME2MongoDB.importCatVer();
-		// ImportMAME2MongoDB.importMAMEInfo();
-		// ImportMAME2MongoDB.importGenre();
-		// ImportMAME2MongoDB.importMature();
-		ImportMAME2MongoDB.importLanguage();
-		// ImportMAME2MongoDB.importSeries();
-		// ImportMAME2MongoDB.importCabinets();
-		// ImportMAME2MongoDB.importFreeplay();
-		// ImportMAME2MongoDB.importBestGames();
-		// ImportMAME2MongoDB.importPlayers();
-		// ImportMAME2MongoDB.importDescriptionFromESGamelist();
+//		ImportMAME2MongoDB.importListXML();
+//		ImportMAME2MongoDB.importHistory();
+//		ImportMAME2MongoDB.importCatVer();
+//		ImportMAME2MongoDB.importMAMEInfo();
+//		ImportMAME2MongoDB.importGenre();
+//		ImportMAME2MongoDB.importMature();
+//		ImportMAME2MongoDB.importLanguage();
+//		ImportMAME2MongoDB.importSeries();
+//		ImportMAME2MongoDB.importCabinets();
+//		ImportMAME2MongoDB.importFreeplay();
+//		ImportMAME2MongoDB.importBestGames();
+//		ImportMAME2MongoDB.importPlayers();
+//		ImportMAME2MongoDB.importDescriptionFromESGamelist();
+		ImportMAME2MongoDB.importSoftwareListXML();
 		System.exit(0);
 
 		// List games from retropie and find metadata from database
