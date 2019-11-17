@@ -111,8 +111,10 @@ public class FilterArcadeGames {
 		}
 
 		// Check romof
-		if ((m.getRomof() == null && this.romof != null) || m.getRomof() != null && !m.getRomof().toLowerCase().contains(this.romof.toLowerCase())) {
-			return false;
+		if (this.romof != null && m.getRomof() != null) {
+			if ((m.getRomof() == null && this.romof != null) || m.getRomof() != null && !m.getRomof().toLowerCase().contains(this.romof.toLowerCase())) {
+				return false;
+			}
 		}
 
 		// Check genre
@@ -233,8 +235,8 @@ public class FilterArcadeGames {
 	 * @throws Exception
 	 */
 	public void generateArcadeClassicsByManufacturers() throws Exception {
-		String[] manufacturers = { "banpresto", "capcom", "data east", "irem", "jaleco", "kaneko", "konami", "midway", "namco", "nintendo", "sega", "taito",
-				"tecmo", "williams" };
+		String[] manufacturers = { "banpresto", "capcom", "data east", "deniam", "face", "incredible", "irem", "jaleco", "kaneko", "konami", "leland", "midway",
+				"mylstar", "omori", "namco", "nintendo", "philko", "sega", "taito", "tecmo", "venture", "williams" };
 
 		for (String manufacturer : manufacturers) {
 			FilterArcadeGames fag = new FilterArcadeGames();
@@ -258,8 +260,11 @@ public class FilterArcadeGames {
 
 	public static void main(String[] args) throws Exception {
 		FilterArcadeGames fag = new FilterArcadeGames();
+//		fag.generateArcadeClassicsByManufacturers();
+
 		// fag.filterCategory = true;
-		fag.romof = "neogeo";
+//		fag.romof = "neogeo";
+		fag.manufacturer = "deniam";
 		fag.generateArcadeClassicsAMList();
 		fag.printAMList();
 

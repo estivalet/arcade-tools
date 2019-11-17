@@ -43,13 +43,11 @@ public class CatverIniFile {
 	}
 
 	/**
-	 * Parse catver.ini file from http://www.progettosnaps.net/catver/ (all in one
-	 * download file e.g: pS_CatVer_200.7z)
+	 * Parse catver.ini file from http://www.progettosnaps.net/catver/ (all in one download file e.g: pS_CatVer_200.7z)
 	 * 
 	 * @throws Exception
 	 */
 	public void parse() throws Exception {
-		System.out.println("Parse CatVer");
 		InputStream is = HistoryDatFile.class.getResourceAsStream("/arcade-files/catver.ini");
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
@@ -110,8 +108,7 @@ public class CatverIniFile {
 		cf.parse();
 
 		for (Entry<String, MameInfo> entry : cf.getGames().entrySet()) {
-			System.out
-					.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getCategory()));
+			System.out.println(entry.getKey() + " = " + (entry.getValue() == null ? "" : entry.getValue().getCategory()));
 		}
 
 	}
