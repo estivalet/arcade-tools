@@ -19,6 +19,8 @@ public class FilterArcadeGames {
 
 	private CatverIniFile cif;
 
+	private String category;
+
 	private EmulatorCfgFile ecf;
 
 	/** Excluded genres. (Removed "Misc.") */
@@ -126,7 +128,17 @@ public class FilterArcadeGames {
 			}
 		}
 
+		// Check if a category is used to filter
+		if (this.category != null) {
+			if (m.getCategory() != null) {
+				if (!m.getCategory().toLowerCase().contains(this.category)) {
+					return false;
+				}
+			}
+		}
+
 		return true;
+
 	}
 
 	/**
@@ -264,7 +276,8 @@ public class FilterArcadeGames {
 
 		// fag.filterCategory = true;
 //		fag.romof = "neogeo";
-		fag.manufacturer = "deniam";
+//		fag.manufacturer = "arcadia";
+		fag.category = "flying";
 		fag.generateArcadeClassicsAMList();
 		fag.printAMList();
 
