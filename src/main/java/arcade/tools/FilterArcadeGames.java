@@ -274,10 +274,10 @@ public class FilterArcadeGames {
 		FilterArcadeGames fag = new FilterArcadeGames();
 //		fag.generateArcadeClassicsByManufacturers();
 
-		// fag.filterCategory = true;
+		fag.filterCategory = true;
 //		fag.romof = "neogeo";
 //		fag.manufacturer = "arcadia";
-		fag.category = "flying";
+//		fag.category = "flying";
 		fag.generateArcadeClassicsAMList();
 		fag.printAMList();
 

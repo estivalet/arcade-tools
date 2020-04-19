@@ -21,6 +21,7 @@ import arcade.domain.GameList;
 import arcade.domain.GameListGame;
 import arcade.domain.Machine;
 import arcade.domain.Mame;
+import arcade.domain.MameBuild;
 import arcade.domain.MameInfo;
 import arcade.domain.SoftwareList2;
 import arcade.domain.Softwarelists;
@@ -90,14 +91,19 @@ public class ImportMAME2MongoDB {
 		System.out.println("Import XML");
 		MongoClient mongoClient = new MongoClient();
 		MongoDatabase database = mongoClient.getDatabase("mamedb");
-		MongoCollection<Document> collection = database.getCollection("machines");
 
+		MongoCollection<Document> build = database.getCollection("build");
+		MongoCollection<Document> collection = database.getCollection("machines");
 		MameXmlFile xml = new MameXmlFile();
 		Mame mame = xml.parse("mame.xml");
+		MameBuild mb = new MameBuild();
+		mb.setVersion(mame.getBuild());
 		Gson gson = new Gson();
+		build.insertOne(new Document(BasicDBObject.parse(gson.toJson(mb))));
 		for (Machine m : mame.getMachine()) {
 			collection.insertOne(new Document(BasicDBObject.parse(gson.toJson(m))));
 		}
+
 		mongoClient.close();
 	}
 
@@ -346,7 +352,7 @@ public class ImportMAME2MongoDB {
 //		ImportMAME2MongoDB.importBestGames();
 //		ImportMAME2MongoDB.importPlayers();
 //		ImportMAME2MongoDB.importDescriptionFromESGamelist();
-		ImportMAME2MongoDB.importSoftwareListXML();
+//		ImportMAME2MongoDB.importSoftwareListXML();
 		System.exit(0);
 
 		// List games from retropie and find metadata from database

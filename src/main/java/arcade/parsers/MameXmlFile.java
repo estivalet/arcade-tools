@@ -66,9 +66,10 @@ public class MameXmlFile {
 
 	public static void main(String[] args) throws Exception {
 		MameXmlFile xml = new MameXmlFile();
-		Mame094 s = xml.parseOld("mame078.xml");
-		for (Machine m : s.getGames()) {
-			System.out.println(m.getName());
+		Mame s = xml.parse("mame.xml");
+		System.out.println("START!");
+		for (Machine m : s.getMachine()) {
+			System.out.println(m.getName() + "=" + m.getDescription() + ";" + m.getYear() + ";" + m.getManufacturer());
 		}
 	}
 
