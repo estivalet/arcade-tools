@@ -1,10 +1,14 @@
 package arcade.parsers;
 
+import java.io.File;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
+import arcade.domain.Software;
 import arcade.domain.SoftwareList2;
 import arcade.domain.Softwarelists;
 
@@ -36,9 +40,28 @@ public class MameSoftwareListXmlFile {
 
 	public static void main(String[] args) throws Exception {
 		MameSoftwareListXmlFile xml = new MameSoftwareListXmlFile();
-		Softwarelists s = xml.parse("softwarelist.xml");
+		Softwarelists s = xml.parse("channelf.xml");
 		for (SoftwareList2 sl : s.getSoftwarelist()) {
 			System.out.println(sl.getName() + " " + sl.getSoftware().size());
+
+			Map<String, String> map = new HashMap<String, String>();
+			for (Software soft : sl.getSoftware()) {
+				map.put(soft.getDescription(), soft.getName());
+			}
+
+			String[] files = new File("c:\\EmuDreams\\systems\\Fairchild Channel F\\snap").list();
+			for (String f : files) {
+				if (f.indexOf("(") > 0) {
+					String name = f.substring(0, f.indexOf("(") - 1);
+					if (map.get(name) == null) {
+						System.out.println("NO------>" + name);
+					} else {
+						System.out.println(map.get(name) + " = " + name);
+//						Files.copy(new File("c:\\EmuDreams\\systems\\Fairchild Channel F\\snap\\" + f).toPath(),
+//								new File("c:\\temp\\" + map.get(name) + ".png").toPath());
+					}
+				}
+			}
 		}
 	}
 
