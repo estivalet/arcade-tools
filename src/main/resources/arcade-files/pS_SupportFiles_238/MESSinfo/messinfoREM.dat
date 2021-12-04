@@ -1,0 +1,3969 @@
+﻿#    MESSINFO_REM.DAT v0.238 Latest update: November 29, 2021
+#                            Project start: November  7, 2011
+#
+#     Author:  Antonio Paradossi (AntoPISA) from Pisa (Tuscany/Italy)
+#
+#      MAME Multiple Arcade Machine Emulator © 1998-2021 MAME Team
+#       MESS Multiple Emulator Super System © 1998-2021 MESS Team
+#
+#           homepage: http://www.progettosnaps.net/messinfo
+#                  e-mail:  messinfo.dat@gmail.com
+#
+#
+#     Internal version: 1.18
+#     Total items: 208
+#
+#
+$info=24c16a
+$mame
+0.207 [smf]
+
+24C16A I2C Memory, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.207: smf added 24C16A I2C Memory device.
+
+$end
+$info=3do_m2
+$mame
+0.144u1 [Brian Hargrove]
+
+3DO M2, 3DO, 199?
+
+The 3DO Interactive Multiplayer (often called simply 3DO) is a video game console originally produced by Panasonic in 1993. Further renditions of the hardware were released in 1994 by Sanyo and Goldstar. The consoles were manufactured according to specifications created by The 3DO Company, and were originally designed by Dave Needle and RJ Mical of New Technology Group. The system was conceived by entrepreneur and Electronic Arts founder Trip Hawkins. Despite a highly-promoted launch (including being named Time magazine's "1994 Product of the Year") and a host of cutting-edge technologies, the 3DO's high price (US$699.95 at launch), limited third-party developer support, and an over-saturated console market prevented the system from achieving success comparable to competitors Sega and Nintendo. This console was released in North America on October 4, 1993, and in Japan on March 20, 1994. In 2009, video game website IGN chose the 3DO as its 22nd greatest video game console of all time, out of its list of 25. Price drops announced in February 1996 were perceived in the industry to be an effort to improve market penetration before the release of the promised successor of 3DO, the M2. Heavy promotional efforts on the YTV variety show It's Alive and a stream of hinted product expandability supported that idea; however, the M2 project was eventually scrapped altogether (source: http://en.wikipedia.org/wiki/3DO_Interactive_Multiplayer).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Preliminary
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet, control panel, marquee and PCB pictures, icon and pdf manual.
+
+WIP:
+- 0.205: Machine removed.
+- 0.167: Deorphaned the software lists for cd32, 3do_m2 and pippin so that they get parsed by the validity checker etc. [Shideravan].
+- 13/01/2012 r14008: Added disclaimer to the lists which are not yet hooked up to the drivers [Fabio Priuli].
+- 22/12/2011 r13668: Uniforming (or adding when missing) file properties in 3do_m2.xml [Fabio Priuli].
+- 0.144u1: Brian Hargrove added skeleton driver of 3DO M2 system.
+
+ROMSET:
+1048576 bytes in 1 file / 664.88Kb packed
+
+$end
+$info=a2600_dpcplus
+$mame
+0.167
+
+Atari 2600 ROM Cart DPC+, Atari, ????
+
+WIP:
+- 0.168: Device removed.
+- 0.167: Added Atari 2600 ROM Cart DPC+ device.
+
+$end
+$info=a2hsscsi
+$mame
+0.151
+
+Apple II High-Speed SCSI Card, Apple Computer, ????
+
+WIP:
+- 0.200: Device removed.
+- 0.151: Added Apple II High-Speed SCSI Card device.
+
+$end
+$info=a2lang
+$mame
+0.162
+
+Apple II Language Card, Apple Computer, ????
+
+WIP:
+- 0.183: Device removed.
+- 0.162: Added Apple II Language Card device.
+
+$end
+$info=a8sio_slot
+$mame
+0.162
+
+Atari 8 bit SIO Slot, Atari, ????
+
+WIP:
+- 0.210: Device removed.
+- 0.162: Added Atari 8 bit SIO Slot device.
+
+$end
+$info=abc_hdc
+$mame
+0.146u5 [Curt Coder]
+
+ABC HDC, ???, ????
+
+WIP:
+- 0.228: Device removed.
+- 0.146u5: Curt Coder added ABC HDC device.
+
+$end
+$info=alice128
+$mame
+0.222 [Tim Lindner]
+
+Alice with MCX-128, Matra & Hachette, 2011
+
+The Matra & Hachette Ordinateur Alice is a home computer sold in France beginning in 1983. It was a clone of the TRS-80 MC-10, produced through a collaboration between Matra and Hachette in France and Tandy Corporation in the United States. The Alice is distinguished by its bright red casing. Functionally, it is equivalent to the MC-10, with a Peritel SCART connector replacing the RF modulator for video output. Unlike its progenitor, the Alice became a popular computer in its home country, aided by its presence in schools as part of the countrys Informatique pour tous "Information technology for everyone" programme. The original model had 4 kB of RAM and used a Motorola 6847 video display generator chip, as used in the Dragon 32 and Acorn Atom among others (source: https://amp.blog.buy-us.net/164110/1/matra-alice.html).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+mc10.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.233: Machine removed.
+- 0.222: Tim Lindner added Matra & Hachette Alice with MCX-128 system.
+
+ROMSET:
+24576 bytes in 2 files / 20.9Kb packed
+
+$end
+$info=am25s557
+$mame
+0.211 [Ryan Holtz]
+
+AMD Am25S557 Combinatorial Multiplier, AMD, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Ryan Holtz added AMD Am25S557 Combinatorial Multiplier skeleton device.
+
+$end
+$info=am25s558
+$mame
+0.211
+
+AMD Am25S558 Combinatorial Multiplier, AMD, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added AMD Am25S558 Combinatorial Multiplier device.
+
+$end
+$info=am2847
+$mame
+0.180
+
+TI TMS3409 80-bit Static Shift Register, ???, ????
+
+WIP:
+- 0.181: Device removed.
+- 0.180: Added TI TMS3409 80-bit Static Shift Register device.
+
+$end
+$info=ampex230
+$mame
+0.219 [Bitsavers]
+
+230, Ampex, 1989
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.219: Bitsavers added Ampex 230 system.
+
+ROMSET:
+40960 bytes in 2 files / 25.5Kb packed
+
+$end
+$info=apple2gsr3lp
+$mame
+0.132 [Nathan Woods, R. Belmont]
+
+Apple IIgs (ROM03 late prototype?), Apple Computer, 1989
+
+The Apple IIGS, the fifth and most powerful model in the Apple II series of personal computers produced by Apple Computer. The "GS" in the name stands for Graphics and Sound, referring to its enhanced graphics and sound capabilities, both of which greatly surpassed previous models of the line. At the time of its release, while it featured graphics comparable to other advanced home computers of the era (even more advanced than the black and white Macintosh, apart from a lower vertical resolution), it was most notable for its then state-of-the-art sound and music synthesis which surpassed all other personal computers at the time. The machine was a radical departure from any previous Apple II, with its true 16-bit architecture, increased processing speed, direct access to megabytes of RAM, wavetable music synthesizer, graphical user interface, and mouse. While still maintaining full backwards compatibility with earlier Apple II models, it blended the Apple II and aspects of Macintosh technology into one. Keeping with Apple's "Apple II Forever" slogan of the time, the IIgs set forth a promising future and evolutionary advancement of the Apple II line, but Apple paid it relatively little attention as the company increasingly focused on the Macintosh platform. The Apple IIgs was the first computer produced by Apple to use a color graphical user interface, as well as the "Platinum" (light grey) color scheme and the Apple Desktop Bus interface for keyboards, mice, and other input devices. It was also the first personal computer to come with a built-in "wavetable" sample-based synthesizer chip, utilizing technology from Ensoniq. The machine outsold all other Apple products, including the Macintosh, during its first year in production.
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+apple2.xml, apple2gs.xml.
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.177: Machine removed.
+- 0.132: Nathan Woods and R. Belmont added Apple IIgs (ROM03 late prototype?) system.
+
+ROMSET:
+270336 / 4 files / 170.05Kb packed
+
+$end
+$info=at29040a
+$mame
+0.162
+
+ATMEL 29040A 512K*8 FEEPROM, ???, ????
+
+WIP:
+- 0.165: Device removed.
+- 0.162: Added ATMEL 29040A 512K*8 FEEPROM device.
+
+$end
+$info=atari_vg_earom
+$mame
+0.162
+
+Atari VG EAROM, Atari, ????
+
+WIP:
+- 0.200: Device removed.
+- 0.162: Added Atari VG EAROM device.
+
+$end
+$info=atari2804
+$mame
+0.150
+
+Atari EEPROM Interface (2804), Atari, ????
+
+WIP:
+- 0.190: Device removed.
+- 0.150: Added Atari EEPROM Interface (2804) device.
+
+$end
+$info=atari2816
+$mame
+0.150
+
+Atari EEPROM Interface (2816), Atari, ????
+
+WIP:
+- 0.190: Device removed.
+- 0.150: Added Atari EEPROM Interface (2816) device.
+
+$end
+$info=attachef
+$mame
+0.149 [Al Kossow, Barry Rodewald]
+
+Attache (boot rev F), Otrona, 1982
+
+The American company's first major product, the Otrona Attach?, came out in April 1982 and folded up to the size of a fat briefcase painted off-white with orange trim. When set up for use, the carrying handle swung under the chassis to prop it up for easier viewing. A keyboard could be removed from one end, revealing a small 5 inch monochrome CRT and two 360Kb "half-height" 5.25 inch floppy disk drives. The system featured a Zilog Z80 microprocessor at running 4 MHz, used the CP/M version 2 operating system with 64K of RAM and optionally, a modified version of IBM's DOS operating system. The RAM can be upgraded to 640Kb and had several programs in ROM. It contained a single speaker for sound output (which could be set to give audible feedback when keys were pressed) and two RS422 serial ports for communication. It also supported monochrome bit-mapped graphics, and introduced the concept of desk accessory programs, such as a calendar. calculator and auto-run timer that could be run without closing a user application. This innovative application set, known as Valet, predated the appearance of similar functionality in the 1984 Macintosh (source: http://en.wikipedia.org/wiki/Otrona).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+attache.xml.
+
+WIP:
+- 0.165: Machine removed.
+- 0.149: Al Kossow and Barry Rodewald added Otrona Attache (boot rev F) system.
+
+ROMSET:
+9216 / 5 files / 3.35Kb packed
+
+$end
+$info=bbcb1770
+$mame
+0.166 [Nigel Barnes]
+
+BBC Micro Model B w/1770 FDC, Acorn, 1985
+
+The BBC Microcomputer System, or BBC Micro, was a series of microcomputers and associated peripherals designed and built by the Acorn Computer company for the BBC Computer Literacy Project, operated by the British Broadcasting Corporation. Designed with an emphasis on education, it was notable for its ruggedness, expandability and the quality of its operating system. Acorn introduced the Model B+ in mid-1985, increasing the total RAM to 64 KB and including floppy-disk support as standard, but this had modest market effect. The extra RAM in the Model B+ BBC Micro was assigned as two blocks, a block of 20 KB dedicated solely for screen display (so-called "Shadow" RAM) and a block of 12 KB of 'special' Sideways RAM. The B+128 came with an additional 64 KB (4 × 16 KB "Sideways" RAM banks) to give a total RAM of 128 KB. The new B+ was incapable of operating some original BBC B programs and games, such as, for example, the very popular Castle Quest. A particular problem was the replacement of the Intel 8271 floppy disk controller with the Western Digital 1770 – not only was the new controller mapped to different addresses, it was fundamentally incompatible and the 8271 emulators that existed were necessarily imperfect for all but basic operation. A piece of software that used copy protection techniques involving direct access to the controller, simply would not operate on the new system. Acorn attempted to alleviate this, starting with version 2.20 of the 1770 DFS, via an 8271-backward- compatible Ctrl+Z+Break option (source: https://en.wikipedia.org/wiki/BBC_Micro#Export_models).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+bbcb_cass.xml and bbca_cass.xml.
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.178: Machine removed.
+- 0.166: Nigel Barnes added Acorn BBC Micro Model B w/1770 FDC system.
+
+ROMSET:
+163840 / 10 files / 12.49Kb packed
+
+$end
+$info=colecoa
+$mame
+0.37b9 [Mike Balfour]
+
+ColecoVision (Thick Characters), Coleco, 1982
+
+The ColecoVision is Coleco Industries' second generation home video game console which was released in August 1982. The ColecoVision offered near-arcade-quality graphics and gaming style, and the means to expand the system's basic hardware. Released with a catalog of 12 launch titles, with an additional ten games announced for 1982, approximately 145 titles in total were published as ROM cartridges for the system between 1982 and 1984. River West Brands currently owns the ColecoVision brand name. In 2009, IGN named the ColecoVision their 12th best video game console out of their list of 25, citing "its incredible accuracy in bringing current-generation arcade hits home (source: http://en.wikipedia.org/wiki/ColecoVision
+
+STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+coleco.xml.
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.153: Machine removed.
+- 0.37b9: Mike Balfour added ColecoVision (Thick Characters) system.
+
+ROMSET:
+8192 / 1 file / 5.56Kb packed
+
+$end
+$info=d50a
+$mame
+0.219 [DBWBP]
+
+D-50 (Ver. 1.xx), Roland, 1987
+
+The Roland D-50 is a synthesizer produced by Roland and released in April 1987. Its features include Linear Arithmetic synthesis, on-board effects, a joystick for data manipulation, and an analogue synthesis-styled layout design. The external Roland PG-1000 (1987-1990) programmer could also be attached to the D-50 for more complex manipulation of its sounds. It was also produced in a rack-mount variant design, the D-550 (1987-1990), with almost 450 user-adjustable parameters. The D-50's capabilities could be modified through the addition of third-party products by Musitronics, most notably the M-EX which made the D-50 multitimbral (the D-50 was bi-timbral), as well as a chip that improved the D-50's response to incoming MIDI commands and a system for burning custom PCM cards with user samples for playback in the D-50 (source: https://en.wikipedia.org/wiki/Roland_D-50).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.219: DBWBP added Roland D-50 (Ver. 1.xx) system.
+
+ROMSET:
+65536 bytes in 1 file / 29.5Kb packed
+
+$end
+$info=dcprt
+$mame
+0.144u4 [The Dumping Union]
+
+Katana Set 5 Prototype, Sega, 1998
+
+As early as 1995, reports surfaced that Sega would collaborate with Lockheed Martin, The 3DO Company, Matsushita, or Alliance Semiconductor to create a new graphics processing unit, which conflicting accounts said would be used for a 64-bit "Saturn 2" or an add-on peripheral. Development of the Dreamcast was wholly unrelated to this rumored project. In light of the Saturn's poor market performance, Irimajiri decided to start looking outside of the company's internal hardware development division to create a new console.[32] In 1997, Irimajiri enlisted the services of IBM's Tatsuo Yamamoto to lead an 11-man team to work on a secret hardware project in the United States, which was referred to as "Blackbelt". Accounts vary on how an internal team led by Hideki Sato also began development on Dreamcast hardware; one account specifies that Sega of Japan tasked both teams,[33] while another suggests that Sato was bothered by Irimajiri's choice to begin development externally and chose to have his hardware team begin development. Sato and his group chose the Hitachi SH-4 processor architecture and the VideoLogic PowerVR2 graphics processor, manufactured by NEC, in the production of their mainboard. Initially known as "Whitebelt", this project was later codenamed "Dural", after the metallic female fighter from Sega's Virtua Fighter series.
+Yamamoto's group opted to use 3dfx Voodoo 2 and Voodoo Banshee graphics processors alongside a Motorola PowerPC 603e central processing unit (CPU), but Sega management later asked them to also use the SH-4 chip. Both processors have been described as "off the shelf" components. In 1997, 3dfx began its IPO, and as a result of legal obligations unveiled its contracts with Sega, including the development of the new console. This angered Sega of Japan executives, who eventually decided to use the Dural chipset and cut ties with 3dfx. According to former Sega of America vice president of communications and former NEC brand manager Charles Bellfield, presentations of games using the NEC solution showcased the performance and low cost delivered by the SH-4 and PowerVR architecture. He further stated that "Sega's relationship with NEC, a Japanese company, probably made a difference [in Sega's decision to adopt the Japanese team's design] too". Stolar, on the other hand, "felt the U.S. version, the 3Dfx version, should have been used. Japan wanted the Japanese version, and Japan won". As a result, 3dfx filed a lawsuit against both Sega and NEC claiming breach of contract, which would eventually be settled out of court. The choice to use the PowerVR architecture concerned Electronic Arts (EA), a longtime developer for Sega's consoles. EA had invested in 3dfx but was unfamiliar with the selected architecture, which was reportedly less powerful. As recounted by Shiro Hagiwara (a general manager at Sega's hardware division) and Ian Oliver (the managing director of Sega subsidiary Cross Products), the SH-4 was chosen while it was still in development and following a lengthy deliberation process because it was the only available processor that "could adapt to deliver the 3D geometry calculation performance necessary". By February 1998, Sega had renamed the Dural "Katana" (after the Japanese sword), although certain hardware specifications such as random access memory (RAM) were not yet finalized (source: https://en.wikipedia.org/wiki/Dreamcast).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.170: Machine removed.
+- 0.144u4: The Dumping Union added Sega Katana Set 5 Prototype system.
+
+ROMSET:
+2097152 / 1 file / 641.71Kb packed
+
+$end
+$info=dp83932c_be
+$mame
+0.202
+
+National Semiconductor DP83932C SONIC (big), ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.202: Added National Semiconductor DP83932C SONIC (big) device.
+
+$end
+$info=dp83932c_le
+$mame
+0.202
+
+National Semiconductor DP83932C SONIC (little), ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.202: Added National Semiconductor DP83932C SONIC (little) device.
+
+$end
+$info=dpb_brushproc
+$mame
+0.211
+
+Quantel DPB-7000 Brush Processor Card, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.213: Hooked up 20L10 PAL and the remainder of logic (not untested) [Ryan Holtz].
+- 0.211: Added Quantel DPB-7000 Brush Processor Card device. Started emulating the Quantel DPB-7000 paintbox: Hooked up CSR, control bus, and system control registers. Hooked up Auto-Start switch and both banks of configuration switches. Hooked up CRT controller character generator (using the bw12 character generator ROM until a proper dump is available). Added preliminary Disk Sequencer Card emulation. Added TV field timer. Fixed screen size and visible area, and fixed field in/out timers. Began adding FDC support. Added a skeleton device for the Combiner Card, and hooked up clocked logic and screen device. Added a skeleton device for the Brush Processor Card. Added a skeleton device for the Store Address Card [Ryan Holtz, Mark Nias].
+
+$end
+$info=dpb_brushstore
+$mame
+0.212
+
+Quantel DPB-7000 Brush Store Card, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.212: Added Quantel DPB-7000 Brush Store Card device.
+
+$end
+$info=dpb_combiner
+$mame
+0.211
+
+Quantel DPB-7000 Combiner Card, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added Quantel DPB-7000 Combiner Card device.
+
+$end
+$info=dpb_framestore
+$mame
+0.212
+
+Quantel DPB-7000 Framestore Card, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.212: Added Quantel DPB-7000 Framestore Card device.
+
+$end
+$info=dpb_storeaddr
+$mame
+0.211
+
+Quantel DPB-7000 Store Address Card, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added Quantel DPB-7000 Store Address Card device.
+
+$end
+$info=dummy_space
+$mame
+0.184
+
+Dummy Space, ???, ????
+
+WIP:
+- 0.232: Device removed.
+- 0.184: Added Dummy Space device.
+
+$end
+$info=dvk_ksm01
+$mame
+0.165 [Scott Stone]
+
+DVK KSM-01, USSR, 198?
+
+<no certified information found>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.177: Machine removed.
+- 0.165: Scott Stone added USSR DVK KSM-01 system.
+
+ROMSET:
+6144 / 3 files / 1.48Kb packed
+
+$end
+$info=einstei2
+$mame
+0.128 [Kevin Thacker, Dirk Best, Phill Harvey-Smith]
+
+Einstein TC-01 + 80 column device, Tatung, 1984
+
+The Tatung Einstein was an eight-bit home/personal computer produced by Taiwanese corporation Tatung, designed in Bradford, England at Tatung's research laboratories and assembled in Bridgnorth and Telford, England. It was aimed primarily at small businesses. The Einstein was released in the United Kingdom in the summer of 1984, and 5,000 were exported back to Taipei later that year. A Tatung monitor (monochrome or colour) and dot matrix printer were also available as options, plus external disc drives and an 80 column display card. It was also capable of emulating the Spectrum 48k with the "Speculator" addon (soruce: http://en.wikipedia.org/wiki/Tatung_Einstein).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+einstein.xml.
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.192: Machine removed.
+- 0.128: Kevin Thacker, Dirk Best and Phill Harvey-Smith added Einstein TC-01 + 80 column device system.
+
+ROMSET:
+8192 bytes in 1 file / 1.74Kb packed
+
+$end
+$info=einstein_adc
+$mame
+0.149u1
+
+Einstein ADC daisy chain, ???, ????
+
+WIP:
+- 0.192: Device removed.
+- 0.186: Renamed (einstein_adc_daisy) to (einstein_adc).
+- 0.149u1: Added Einstein ADC daisy chain device.
+
+$end
+$info=einstein_fire
+$mame
+0.149u1
+
+Einstein fire button daisy chain, ???, ????
+
+WIP:
+- 0.192: Device removed.
+- 0.186: Renamed (einstein_fire_daisy) to (einstein_fire).
+- 0.149u1: Added Einstein fire button daisy chain device.
+
+$end
+$info=einstein_keyboard
+$mame
+0.149u1
+
+Einstein keyboard daisy chain, ???, ????
+
+WIP:
+- 0.192: Device removed.
+- 0.149u1: Added Einstein keyboard daisy chain device.
+
+$end
+$info=eka_strt
+$mame
+0.195 [Sean Riddle, Peter Wilhelmsen]
+
+e-kara Starter, Takara / SSD Company LTD, 200?
+
+<no certified information found>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.204: Machine removed.
+- 0.195: Sean Riddle and Peter Wilhelmsen added Takara/SSD Company LTD e-kara Starter system.
+
+ROMSET:
+524288 bytes in 1 file / 253Kb packed
+
+$end
+$info=eka_vol1
+$mame
+0.196 [Sean Riddle, Peter Wilhelmsen]
+
+e-kara Volume 1 (US?), Takara / Hasbro / SSD Company LTD, 200?
+
+<no certified information found>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet (cart) and Flyer (box) pictures.
+
+WIP:
+- 0.204: Machine removed.
+- 0.196: Sean Riddle and Peter Wilhelmsen added Takara/Hasbro/SSD Company LTD e-kara Volume 1 (US?) system.
+
+ROMSET:
+1048576 bytes in 1 file / 489Kb packed
+
+$end
+$info=eka_vol2
+$mame
+0.196 [Sean Riddle, Peter Wilhelmsen]
+
+e-kara Volume 2 (US?), Takara / Hasbro / SSD Company LTD, 200?
+
+Contains 10 songs: Larger Than Life, I'll Be There For You, My Everything, Dizzy, Independent Woman Part 1, Waiting For Tonight, Let Me Let Go, There's Your Trouble, 5678, Stomp. For the e-Kara Karaoke Music System (source: https://www.ebay.com/itm/Xavix-E-Kara-Karaoke-Cartridge-Volume-2-/152790225414).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.204: Machine removed.
+- 0.196: Sean Riddle and Peter Wilhelmsen added Takara/Hasbro/SSD Company LTD e-kara Volume 2 (US?) system.
+
+ROMSET:
+1048576 bytes in 1 file / 522Kb packed
+
+$end
+$info=ex800
+$mame
+0.128 [Dirk Best]
+
+EX-800, Epson, 1986
+
+<no certified information found>
+
+STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Preliminary
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet, marquees pictures and pdf manual.
+
+WIP:
+- 0.154: Declassed to 'device'.
+- 0.128: Added Epson EX-800 system.
+
+ROMSET:
+32768 / 1 file / 21.12Kb packed
+
+$end
+$info=exsprt48a
+$mame
+0.218 [TeamEurope]
+
+Excite Sports Wireless Interactive TV Game - 48-in-1 (set 2, PAL), Excite, 200?
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Imperfect
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.219: Machine removed.
+- 0.218: TeamEurope added Excite Excite Sports Wireless Interactive TV Game - 48-in-1 (set 2, PAL) system.
+
+ROMSET:
+33554432 bytes in 1 file / 11.0Mb packed
+
+$end
+$info=fccpu20
+$mame
+0.181 [Joakim Larsson Edstrom]
+
+SYS68K/CPU-20, Force Computers Gmbh, 1986
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.183: Declassed to 'device'.
+- 0.182: Machine promoted to working. Added VME interface [Joakim Larsson Edstrom].
+- 0.181: Joakim Larsson Edstrom added Force Computers Gmbh SYS68K/CPU-20 system.
+
+ROMSET:
+65536 / 4 files / 33.6Kb packed
+
+$end
+$info=feag2100fr
+$mame
+0.179 [hap, anonymous]
+
+Elite Avant Garde 2100 (French), Fidelity Electronics, 1986
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_Avantgarde_2100
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap, anonymous added Fidelity Electronics Elite Avant Garde 2100 (French) system.
+
+ROMSET:
+57344 bytes in 4 files / 44.0Kb packed
+
+$end
+$info=feag2100g
+$mame
+0.179 [hap, anonymous]
+
+Elite Avant Garde 2100 (German), Fidelity Electronics, 1986
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_Avantgarde_2100
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap, anonymous added Fidelity Electronics Elite Avant Garde 2100 (German) system.
+
+ROMSET:
+57344 bytes in 4 files / 44.0Kb packed
+
+$end
+$info=feag2100sp
+$mame
+0.179 [hap, anonymous]
+
+Elite Avant Garde 2100 (Spanish), Fidelity Electronics, 1986
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_Avantgarde_2100
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap, anonymous added Fidelity Electronics Elite Avant Garde 2100 (Spanish) system.
+
+ROMSET:
+57344 bytes in 4 files / 44.0Kb packed
+
+$end
+$info=feagfr
+$mame
+0.207 [hap, Berger]
+
+Elite Avant Garde (model 6081, French), Fidelity Electronics, 1986
+
+In late 1985 / early 1986, Fidelity launched the avant-garde successor to the Fidelity Elite A / S. Visually, the devices are similar, but buttons and display have been brought from the front (Elite A / S) to the right and added to a second display. The program was the so-called "Elite XC", which won the open American computer championship in Mobile (Alabama) in 1985. Therefore, the device was also named "Mobile Master (6081)". On the 8bit base of the 6502 processor, the 1986 Fidelity Elite Avantgarde 2100 (6088) followed, which included a slightly redesigned par excellence program with a larger reopening library (28,000 half leads) (source, translated from German: https://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_Avantgarde).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.207: hap and Berger added Fidelity Electronics Elite Avant Garde (model 6081, French) system.
+
+ROMSET:
+32768 bytes in 4 files / 23.3Kb packed
+
+$end
+$info=feagg
+$mame
+0.207 [hap, Berger]
+
+Elite Avant Garde (model 6081, German), Fidelity Electronics, 1986
+
+In late 1985 / early 1986, Fidelity launched the avant-garde successor to the Fidelity Elite A / S. Visually, the devices are similar, but buttons and display have been brought from the front (Elite A / S) to the right and added to a second display. The program was the so-called "Elite XC", which won the open American computer championship in Mobile (Alabama) in 1985. Therefore, the device was also named "Mobile Master (6081)". On the 8bit base of the 6502 processor, the 1986 Fidelity Elite Avantgarde 2100 (6088) followed, which included a slightly redesigned par excellence program with a larger reopening library (28,000 half leads) (source, translated from German: https://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_Avantgarde).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.207: hap and Berger added Fidelity Electronics Elite Avant Garde (model 6081, German) system.
+
+ROMSET:
+32768 bytes in 4 files / 24.1Kb packed
+
+$end
+$info=feagsp
+$mame
+0.207 [hap, Berger]
+
+Elite Avant Garde (model 6081, Spanish), Fidelity Electronics, 1986
+
+In late 1985 / early 1986, Fidelity launched the avant-garde successor to the Fidelity Elite A / S. Visually, the devices are similar, but buttons and display have been brought from the front (Elite A / S) to the right and added to a second display. The program was the so-called "Elite XC", which won the open American computer championship in Mobile (Alabama) in 1985. Therefore, the device was also named "Mobile Master (6081)". On the 8bit base of the 6502 processor, the 1986 Fidelity Elite Avantgarde 2100 (6088) followed, which included a slightly redesigned par excellence program with a larger reopening library (28,000 half leads) (source, translated from German: https://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_Avantgarde).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.207: hap and Berger added Fidelity Electronics Elite Avant Garde (model 6081, Spanish) system.
+
+ROMSET:
+32768 bytes in 4 files / 24.4Kb packed
+
+$end
+$info=feagv2a
+$mame
+0.182 [Berger]
+
+Elite Avant Garde (model 6114-2/3/4, set 2), Fidelity Electronics, 1989
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.182: Berger added Fidelity Electronics Elite Avant Garde (model 6114-2/3/4, set 2) system.
+
+ROMSET:
+131072 bytes in 2 file / 88.9Kb packed
+
+$end
+$info=feasbufr
+$mame
+0.179 [hap]
+
+Elite A/S Challenger (Budapest program, French), Fidelity Electronics, 198x
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_A/S_Budapest
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap added Fidelity Electronics Elite A/S Challenger (Budapest program, French) system.
+
+ROMSET:
+32768 bytes in 4 files / 5.16Kb packed
+
+$end
+$info=feasbug
+$mame
+0.179 [hap]
+
+Elite A/S Challenger (Budapest program, German), Fidelity Electronics, 1983
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_A/S_Budapest
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap added Fidelity Electronics Elite A/S Challenger (Budapest program, German) system.
+
+ROMSET:
+32768 bytes in 4 files / 5.16Kb packed
+
+$end
+$info=feasbusp
+$mame
+0.179 [hap]
+
+Elite A/S Challenger (Budapest program, Spanish), Fidelity Electronics, 1983
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_A/S_Budapest
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap added Fidelity Electronics Elite A/S Challenger (Budapest program, Spanish) system.
+
+ROMSET:
+32768 bytes in 4 files / 5.16Kb packed
+
+$end
+$info=feasglafr
+$mame
+0.179 [hap]
+
+Elite A/S Challenger (Glasgow program, French), Fidelity Electronics, 1984
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_A/S_Glasgow
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap added Fidelity Electronics Elite A/S Challenger (Glasgow program, French) system.
+
+ROMSET:
+32768 bytes in 4 files / 22.5Kb packed
+
+$end
+$info=feasglag
+$mame
+0.179 [hap]
+
+Elite A/S Challenger (Glasgow program, German), Fidelity Electronics, 1984
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_A/S_Glasgow
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap added Fidelity Electronics Elite A/S Challenger (Glasgow program, German) system.
+
+ROMSET:
+32768 bytes in 4 files / 22.5Kb packed
+
+$end
+$info=feasglasp
+$mame
+0.179 [hap]
+
+Elite A/S Challenger (Glasgow program, Spanish), Fidelity Electronics, 1984
+
+Technical information and pictures: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Elite_A/S_Glasgow
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.179: hap added Fidelity Electronics Elite A/S Challenger (Glasgow program, Spanish) system.
+
+ROMSET:
+32768 bytes in 4 files / 22.5Kb packed
+
+$end
+$info=fepriv
+$mame
+0.207 [hap, Berger]
+
+Elite Private Line (red version), Fidelity Deutschland, 1984
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+Cabinet.
+
+WIP:
+- 0.221: Machine removed, move select a game to its own driver [hap].
+- 0.208: Changed description to 'Elite Private Line (red version)' and manufacturer to 'Fidelity Deutschland'.
+- 0.207: hap and Berger added Fidelity Electronics Elite Private Line (red version, English) system.
+
+ROMSET:
+28672 bytes in 4 files / 17.15Kb packed
+
+$end
+$info=feprivfr
+$mame
+0.207 [hap, Berger]
+
+Elite Private Line (red version, French), Fidelity Electronics, 1984
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.207: hap and Berger added Fidelity Electronics Elite Private Line (red version, French) system.
+
+ROMSET:
+32768 bytes in 4 files / 17.15Kb packed
+
+$end
+$info=feprivg
+$mame
+0.207 [hap, Berger]
+
+Elite Private Line (red version, German), Fidelity Electronics, 1984
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.207: hap and Berger added Fidelity Electronics Elite Private Line (red version, German) system.
+
+ROMSET:
+32768 bytes in 4 files / 17.15Kb packed
+
+$end
+$info=feprivsp
+$mame
+0.207 [hap, Berger]
+
+Elite Private Line (red version, Spanish), Fidelity Electronics, 1984
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.207: hap and Berger added Fidelity Electronics Elite Private Line (red version, Spanish) system.
+
+ROMSET:
+32768 bytes in 4 files / 17.15Kb packed
+
+$end
+$info=fmtownsa
+$mame
+0.132 [Barry Rodewald]
+
+FM-Towns (alternate), Fujitsu, 1989
+
+The FM Towns system is a Japanese PC variant, built by Fujitsu from February 1989 to the summer of 1997. It started as a proprietary PC variant intended for multimedia applications and PC games, but later became more compatible with regular PCs. In 1993, the FM Towns Marty was released, a gaming console compatible with the FM Towns games (source: http://en.wikipedia.org/wiki/FM_Towns).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+RESOURCES:
+Cabinet and flyer pictures.
+
+WIP:
+- 0.215: Machine removed.
+- 0.132: Barry Rodewald added FM-Towns (alternate) system.
+
+ROMSET:
+2097152 bytes in 5 files / 762.66Kb packed
+
+$end
+$info=fpresbufr
+$mame
+0.198 [hap, Berger, yoyo_chessboard]
+
+Prestige Challenger (Budapest program, French), Fidelity Electronics, 1983
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.198: hap, Berger and yoyo_chessboard added Fidelity Electronics Prestige Challenger (Budapest program, French) system.
+
+ROMSET:
+28672 bytes in 6 files / 20.1Kb packed
+
+$end
+$info=fpresbug
+$mame
+0.198 [hap, Berger, yoyo_chessboard]
+
+Prestige Challenger (Budapest program, German), Fidelity Electronics, 1983
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.198: hap, Berger and yoyo_chessboard added Fidelity Electronics Prestige Challenger (Budapest program, German) system.
+
+ROMSET:
+28672 bytes in 6 files / 20.9Kb packed
+
+$end
+$info=fpresbusp
+$mame
+0.198 [hap, Berger, yoyo_chessboard]
+
+Prestige Challenger (Budapest program, Spanish), Fidelity Electronics, 1983
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.198: hap, Berger and yoyo_chessboard added Fidelity Electronics Prestige Challenger (Budapest program, Spanish) system.
+
+ROMSET:
+28672 bytes in 6 files / 21.2Kb packed
+
+$end
+$info=fpresfr
+$mame
+0.198 [hap, Berger, yoyo_chessboard]
+
+Prestige Challenger (original program, French), Fidelity Electronics, 1982
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.198: hap, Berger and yoyo_chessboard added Fidelity Electronics Prestige Challenger (original program, French) system.
+
+ROMSET:
+28672 bytes in 6 files / 5.15Kb packed
+
+$end
+$info=fpresg
+$mame
+0.198 [hap, Berger, yoyo_chessboard]
+
+Prestige Challenger (original program, German), Fidelity Electronics, 1982
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.198: hap, Berger and yoyo_chessboard added Fidelity Electronics Prestige Challenger (original program, German) system.
+
+ROMSET:
+28672 bytes in 6 files / 5.93Kb packed
+
+$end
+$info=fpressp
+$mame
+0.198 [hap, Berger, yoyo_chessboard]
+
+Prestige Challenger (original program, Spanish), Fidelity Electronics, 1982
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+fidel_scc.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.198: hap, Berger and yoyo_chessboard added Fidelity Electronics Prestige Challenger (original program, Spanish) system.
+
+ROMSET:
+28672 bytes in 6 files / 6.20Kb packed
+
+$end
+$info=fujitsu_29dl16x
+$mame
+0.149u1
+
+Fujitsu 29DL16X Flash, Fujitsu, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.149u1: Added Fujitsu 29DL16X Flash device.
+
+$end
+$info=fujitsu_29f160t
+$mame
+0.156
+
+Fujitsu 29F160T Flash, Fujitsu, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.186: Changed description to 'Fujitsu 29F160T Flash'.
+- 0.156: Added Fujitsu 29F160 Flash device.
+
+$end
+$info=gb_rom_m161m12
+$mame
+0.162
+
+GB M161-M12 Carts, ???, ????
+
+WIP:
+- 0.175: Device removed.
+- 0.162: Added GB M161-M12 Carts device.
+
+$end
+$info=gblight
+$mame
+0.132 [Fabio Priuli]
+
+Game Boy Light, Nintendo, 1997
+
+The Game Boy Light was released on April 14, 1998 for ¥6,800 and was only available in Japan. Considered the rarest of rare Game Boys, NIB Game Boy Light units regularly sell in the triple-figures on online auction websites. The Game Boy Light is only slightly bigger than the Game Boy Pocket and features an Electroluminescent backlight for low-light  conditions. It uses 2 AA batteries, which gave it approximately 20 hours with the light off and 12 with it on. It was available in two standard colors; Gold and Silver, as well as numerous special editions. There is an Astro Boy edition with a clear case with an Astro Boy picture on it. There is a Osamu Tezuka World shop edition with a clear red case and a picture of his characters. There is a Pokémon Center Tokyo version in yellow color. There is a clear 'skeleton' Famitsu edition which had only 5,000 units released. There is a clear yellow edition separate from the solid yellow Pokémon Center Tokyo version (source: http://www.thefullwiki.org/Game_Boy_Light).
+
+STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+RESOURCES:
+Artwork and Cabinet picture.
+
+WIP:
+- 0.154: Machine removed.
+- 0.132: Fabio Priuli added Game Boy Light system.
+
+ROMSET:
+None required.
+
+$end
+$info=gen32_oc
+$mame
+0.143u9 [Cowering]
+
+Mephisto Genius030 V4.01OC, Hegener & Glaser Muenchen, 1993
+
+<no certified information found>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Artwork.
+
+WIP:
+- 0.171: Machine removed.
+- 0.143u9: Cowering added Mephisto Genius030 V4.01OC system.
+
+ROMSET:
+262144 / 1 file / 106.80Kb packed
+
+$end
+$info=geneve_mouse
+$mame
+0.162
+
+Geneve mouse, ???, ????
+
+WIP:
+- 0.184: Device removed.
+- 0.162: Added Geneve mouse device.
+
+$end
+$info=genmod_gate_array
+$mame
+0.199
+
+Geneve Mod Gate Array, ???, ????
+
+WIP:
+- 0.218: Device removed.
+- 0.214: Renamed (genmod_mapper) to (genmod_gate_array).
+- 0.199: Added Geneve Mod Gate Array device.
+
+$end
+$info=hp_optrom_slot
+$mame
+0.173
+
+HP9845 optional ROM Slot, Hewlett Packard, ????
+
+WIP:
+- 0.216: Device removed.
+- 0.173: Added HP9845 optional ROM Slot device.
+
+$end
+$info=hp80_optrom_slot
+$mame
+0.190
+
+HP80 optional ROM slot, Hewlett Packard, ????
+
+WIP:
+- 0.216: Device removed.
+- 0.190: Added HP80 optional ROM slot device.
+
+$end
+$info=hp9825_optrom_cart
+$mame
+0.215
+
+HP9825 optional ROM cartridge, ???, ????
+
+WIP:
+- 0.216: Device removed.
+- 0.215: Added HP9825 optional ROM cartridge device.
+
+$end
+$info=i8041
+$mame
+0.150
+
+Intel I8041, Intel, ????
+
+WIP:
+- 0.211: Device removed.
+- 0.196: Changed description to 'Intel I8041' [Angelo Salese].
+- 0.150: Added I8041 device.
+
+$end
+$info=i8042
+$mame
+0.150
+
+Intel I8042, Intel, ????
+
+WIP:
+- 0.211: Device removed.
+- 0.196: Changed description to 'Intel I8042' [Angelo Salese].
+- 0.150: Added I8042 device.
+
+$end
+$info=i8274_new
+$mame
+0.184
+
+Intel 8274 MPSC (new), Intel, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.187: Renamed (i8274n) to (i8274_new) and changed description to 'Intel 8274 MPSC (new)'.
+- 0.184: Added i8274 device.
+
+$end
+$info=ibmps1es
+$mame
+0.150 [crazyc]
+
+PS/1 (Spanish), International Business Machines, 1989
+
+The IBM PS/1 was a brand for a line of personal computers and was IBM's return to the home market in 1990, five years after the IBM PCjr. It was replaced by the IBM Aptiva in September 1994. The PS/1 line was discontinued in 1994 and replaced with the Aptiva line, which was architecturally very similar to the later models of the PS/1, but with a more marketing-friendly name. Aptivas were sold in the United States until early 2000, when price pressures made the line unprofitable and IBM withdrew from the retail desktop PC market entirely (source: http://en.wikipedia.org/wiki/IBM_PS/1).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.222: Machine removed.
+- 0.206: Changed description to 'PS/1 (Spanish)'.
+- 0.150: crazyc added IBM IBM PS/1 (Spanish) system.
+- 25/07/2013 r24518: Preliminary PS/1 support (Probably stalled until the kbc supports mice) [crazyc].
+
+ROMSET:
+262144 bytes in 2 files / 112.57Kb packed
+
+$end
+$info=ioga
+$mame
+0.183
+
+InterPro IOGA, ???, ????
+
+WIP:
+- 0.192: Device removed.
+- 0.183: Added InterPro IOGA device.
+
+$end
+$info=k2k_ss5_cart
+$mame
+0.154
+
+NEOGEO Kof2002-type Samsho5 Cart, ???, ????
+
+WIP:
+- 0.174: Device removed.
+- 0.154: Added NEOGEO Kof2002-type Samsho5 Cart device.
+
+$end
+$info=k2k_ss5s_cart
+$mame
+0.154
+
+NEOGEO Kof2002-type Samsho5sp Cart, ???, ????
+
+WIP:
+- 0.174: Device removed.
+- 0.154: Added NEOGEO Kof2002-type Samsho5sp Cart device.
+
+$end
+$info=korgm1
+$mame
+0.148 [Angelo Salese]
+
+M1, Korg, 1988
+
+The Korg M1 is the world's first widely known music workstation. Its onboard MIDI sequencer and palette of sounds allowed musicians to produce complete professional arrangements. Outselling the Yamaha DX7 and Roland D-50, the M1 became the top-selling digital synthesizer of its time. Rackmount versions of the M1 were available. The M1R was a 2U rack with the same ROM and patches and combis as the M1. The M1EX keyboard and M1R-EX (rack version) included an additional 4MB block of waveforms in ROM. The M3R was a cut-down model in 1U form factor that had similar sounds and its own line of ROM cards. The M1's synth engine remained nearly unchanged until the Korg Trinity's breakthrough in 1995, with minor improvements concerning polyphony, more control sources, and more effects algorithms. The T series (1989: T1/T2/T3) built upon the M1's success, offering more keyboard alternatives (88, 76 and 61-key versions), a disk drive and more ROM samples, more sequencer capacity, and a better screen. However, the polyphony stalled at 16 notes and the effects blocks were untouched. A 1 MB sample RAM option allowed users to load a handful of samples for use with the synth sections. The T1 series is able to read memory cards (RAM and ROM) that work in the M1, and can also load M1 patches and Combi's from SysEx files (source: http://en.wikipedia.org/wiki/Korg_M1).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Preliminary
+Sound: Preliminary
+Graphics: Preliminary
+Save State: Unsupported
+
+WIP:
+- 0.148: Angelo Salese added skeleton driver of Korg M1 system.
+
+ROMSET:
+The system isn't add to mess.lst.
+
+$end
+$info=las110de
+$mame
+0.83 [Dirk Best]
+
+Laser 110 (Germany), Sanyo, 1983
+
+Technical information (in german) and pictures: http://www.zock.com/8-Bit/D_Laser110.HTML
+
+STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.154: Machine removed.
+- 0.83: Dirk Best added Sanyo Laser 110 (Germany) system.
+
+ROMSET:
+16384 / 2 files / 12.95Kb packed
+
+$end
+$info=las210de
+$mame
+0.83 [Dirk Best]
+
+Laser 210 (Germany), Sanyo, 1983
+
+The two laser computer Sanyo video was meant as home appliances. They were the successors of the models VZ100 & VZ200 and had a larger memory. In addition to games, there were also some application programs. The price was about 1984 269 DM for the Laser 110 and 359 DM for the 210th laser (source, traslated from german: http://www.jaapan.de/heimcomputer.php?page=laser210).
+
+STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.154: Machine removed.
+- 0.83: Dirk Best added Sanyo Laser 210 (Germany) system.
+
+ROMSET:
+16384 / 2 files / 13.21Kb packed
+
+$end
+$info=leappadca
+$mame
+0.208 [Sean Riddle, ClawGrip]
+
+LeapPad (Canada), LeapFrog, 2004
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+leapfrog_leappad_cart.xml
+
+RESOURCES:
+-
+
+WIP:
+- 0.232: Machine removed.
+- 0.208: Sean Riddle and ClawGrip added LeapFrog LeapPad (Canada) system.
+
+ROMSET:
+2097152 bytes in 1 file / 1.27Kb packed
+
+$end
+$info=lx800
+$mame
+0.133 [?]
+
+LX-800, Epson, 1987
+
+<no certified information found>
+
+STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet, marquee pictures and pdf manual.
+
+WIP:
+- 0.154: Declassed to 'device'.
+- 0.133: Added skeleton driver of Epson LX-800 system.
+
+ROMSET:
+32768 / 1 file / 14.82Kb packed
+
+$end
+$info=m6502_vh2009
+$mame
+0.216
+
+VRT VH2009, ???, ????
+
+WIP:
+- 0.219: Device removed.
+- 0.216: Added VRT VH2009 device.
+
+$end
+$info=m6502_vt1682
+$mame
+0.216
+
+VRT VT1682, ???, ????
+
+WIP:
+- 0.219: Device removed.
+- 0.216: Added VRT VT1682 device.
+
+$end
+$info=m740
+$mame
+0.184
+
+Mitsubishi M740, Mitsubishi, ????
+
+WIP:
+- 0.228: Device removed.
+- 0.196: Changed description to 'Mitsubishi M740' [Angelo Salese].
+- 0.184: Added M740 device.
+
+$end
+$info=mb91101a
+$mame
+0.215
+
+Fujitsu MB91101A, Fujitsu, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.215: Added Fujitsu MB91101A device.
+
+$end
+$info=mc_pg150
+$mame
+0.195 [David Shah]
+
+Pocket Games 150 in 1, <unknown>, 201?
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER:
+nes_vt369_vtunknown.cpp
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Snap, Title and machine picture (in "Cabinet" collection).
+
+WIP:
+- 0.238: Machine removed .
+- 0.195: David Shah added Pocket Games 150 in 1 system.
+
+ROMSET:
+33554432 bytes in 1 file / 16.5Mb packed
+
+$end
+$info=mc2661
+$mame
+0.149u1
+
+MC2661, ???, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.206: Implemented parity and framing error checks/status, and suppressed side effects of reads correctly [AJR].
+- 0.149u1: Added MC2661 device.
+
+$end
+$info=mcx128
+$mame
+0.222 [Tim Lindner]
+
+MCX-128, Tandy Radio Shack, 2011
+
+The MCX128 is an expansion module for the TRS-80 MC-10 or Matra Alice 4K. It adds 128K static RAM and a socket to accomodate a 27128, 27256 or 27512 EPROM. The board is supported by an extended version of the MicroColor Basic interpreter (MCX Basic) which needs to be programmed into the EPROM.  MCX Basic adds many of the language features found in Extended Color Basic for the Tandy Color Computer (CoCo).  It also supports using a PC/Mac or other host device as a file server (source: https://mcxwares.blogspot.com/2020/04/mcx128.html?m=1).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+mc10.xml
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.233: Machine removed.
+- 0.222: Tim Lindner added Tandy Radio Shack MCX-128 system.
+
+ROMSET:
+24576 bytes in 2 files / 13.8Kb packed
+
+$end
+$info=mfleappadus
+$mame
+0.207 [Sean Riddle]
+
+My First LeapPad (US), LeapFrog, 2004
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.232: Machine removed.
+- 0.208: Renamed (mfleappad) to (mfleappadus) and changed description to 'My First LeapPad (US)'.
+- 0.207: Sean Riddle added LeapFrog My First LeapPad (UK) system.
+
+ROMSET:
+4194304 bytes in 1 file / 3.06Mb packed
+
+$end
+$info=mm50
+$mame
+0.120 [Dirk Verwiebe]
+
+Mephisto MM V (V5.0), Hegener & Glaser, 1990
+
+Mephisto MM V program appeared on the market and is still one of the most popular modules! This has several reasons: First, it is the last module of Hegener and Glaser, which can also be operated in Mephisto Mobil and thus "pocket-portable" is. Second, it is up to his playing style. But the program itself has other undeniable qualities: the narrow opening repertoire has failed, for which a scope is specified of 8000 half moves. But at least all transpositions are detected. To compensate, you can pick up the HG 550 Opening module that expands the scope to about 20,000 half-moves, but in the mobile / slot can not be operated (source, traslated from german: http://www.schach-computer.info/wiki/index.php/Mephisto_MM_V).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.212: Machine removed.
+- 0.209: Changed description to 'Mephisto MM V (V5.0)'.
+- 0.120: Dirk Verwiebe added Mephisto Rebel 5.0 system.
+
+ROMSET:
+49152 bytes in 2 files / 32.71Kb packed
+
+$end
+$info=mm5tk
+$mame
+0.142 [Dirk Verwiebe, Cowering]
+
+Mephisto MM V (V5.1) (TurboKit + HG550), Hegener & Glaser, 1990
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+WIP:
+- 0.212: Machine removed.
+- 0.209: Changed description to 'Mephisto MM V (V5.1) (TurboKit + HG550)'.
+- 0.142: Dirk Verwiebe and Cowering added Hegener & Glaser Mephisto 5.1 Schachcomputer Turbo Kit + HG550 system.
+
+ROMSET:
+49152 bytes in 2 files / 32.72Kb packed
+
+$end
+$info=neogeo_banked_cart
+$mame
+0.154
+
+NeoGeo Banked Cartridge, ???, ????
+
+WIP:
+- 0.174: Device removed.
+- 0.154: Added NeoGeo Banked Cartridge device.
+
+$end
+$info=nes_bmc_110in1
+$mame
+0.148u4
+
+NES Cart BMC 110 in 1 PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/multigame.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.235: Device removed.
+- 0.148u4: Added NES Cart BMC 110 in 1 PCB device.
+
+$end
+$info=nes_bmc_ch001
+$mame
+0.148u4
+
+NES Cart BMC CH-001 PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/multigame.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.235: Device removed.
+- 0.148u4: Added NES Cart BMC CH-001 PCB device.
+
+$end
+$info=nes_bmc_gb63
+$mame
+0.148u4
+
+NES Cart BMC Ghostbusters 63 in 1 PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/multigame.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart BMC Ghostbusters 63 in 1 PCB device.
+
+$end
+$info=nes_bmc_gc6in1
+$mame
+0.148u4
+
+NES Cart BMC Golden Card 6 in 1 PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/mmc3_clones.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart BMC Golden Card 6 in 1 PCB device.
+
+$end
+$info=nes_bmc_super22
+$mame
+0.148u4
+
+NES Cart BMC Super 22 Games PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/multigame.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart BMC Super 22 Games PCB device.
+
+$end
+$info=nes_ddr
+$mame
+0.205
+
+Majesco DDR Pad, Majesco, ????
+
+WIP:
+- 0.219: Device removed.
+- 0.205: Added Majesco DDR Pad device.
+
+$end
+$info=nes_hosenkan
+$mame
+0.148u4
+
+NES Cart HOSENKAN PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/hosenkan.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart HOSENKAN PCB device.
+
+$end
+$info=nes_novel1
+$mame
+0.148u4
+
+NES Cart Novel Diamond Type 1 PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/multigame.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart Novel Diamond Type 1 PCB device.
+
+$end
+$info=nes_novel2
+$mame
+0.148u4
+
+NES Cart Novel Diamond Type 2 PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/multigame.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart Novel Diamond Type 2 PCB device.
+
+$end
+$info=nes_resettxrom0
+$mame
+0.235 [0kmg]
+
+NES Cart BMC RESET-TXROM 128K/128K PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/mmc3_clones.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.237: Device removed.
+- 0.235: 0kmg added NES Cart BMC RESET-TXROM 128K/128K PCB device.
+
+$end
+$info=nes_resettxrom1
+$mame
+0.235 [0kmg]
+
+NES Cart BMC RESET-TXROM 256K/128K PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/mmc3_clones.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.237: Device removed.
+- 0.235: 0kmg added NES Cart BMC RESET-TXROM 256K/128K PCB device.
+
+$end
+$info=nes_resettxrom2
+$mame
+0.235 [0kmg]
+
+NES Cart BMC RESET-TXROM 128K/256K PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/mmc3_clones.cpp
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.237: Device removed.
+- 0.235: 0kmg added NES Cart BMC RESET-TXROM 128K/256K PCB device.
+
+$end
+$info=nes_sorom_a
+$mame
+0.148u4
+
+NES Cart SOROM (MMC-1A) PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/mmc1.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Device removed.
+- 0.148u4: Added NES Cart SOROM (MMC-1A) PCB device.
+
+$end
+$info=nes_sxrom_a
+$mame
+0.148u4
+
+NES Cart SxROM (MMC-1A) PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/mmc1.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.236: Devide removed.
+- 0.148u4: Added NES Cart SxROM (MMC-1A) PCB device.
+
+$end
+$info=nes_unl_bb
+$mame
+0.148u4
+
+NES Cart FDS+CHR Pirate PCB, ???, ????
+
+WIP:
+- 0.234: Device removed.
+- 0.148u4: Added NES Cart FDS+CHR Pirate PCB device.
+
+$end
+$info=nes_vt_soc_4k_hh
+$mame
+0.221 [David Haywood]
+
+VTxx series System on a Chip (with 4KByte RAM) (HH), ???, ????
+
+WIP:
+- 0.226: Device removed.
+- 0.221: David Haywood added VTxx series System on a Chip (with 4KByte RAM) (HH) device.
+
+$end
+$info=nes_vt_soc_8k_fa
+$mame
+0.221 [David Haywood]
+
+VTxx series System on a Chip (with 8KByte RAM) (FA), ???, ????
+
+WIP:
+- 0.226: Device removed.
+- 0.221: David Haywood added VTxx series System on a Chip (with 8KByte RAM) (FA) device.
+
+$end
+$info=nes_whero
+$mame
+0.148u4
+
+NES Cart World Heroes PCB, <unknown>, ????
+
+DRIVER:
+src/devices/bus/nes/pirate.cpp
+
+DRIVER STATUS:
+Emulation: Unknown
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+WIP:
+- 0.237: Device removed.
+- 0.148u4: Added NES Cart World Heroes PCB device.
+
+$end
+$info=nes_whirl2706
+$mame
+0.148u4
+
+NES Cart Whilwind 2706 PCB, ???, ????
+
+WIP:
+- 0.234: Device removed.
+- 0.186: Changed description to 'NES Cart Whilwind 2706 PCB'.
+- 0.148u4: Added NES Cart Whirlwind 2706 PCB device.
+
+$end
+$info=newbraineim
+$mame
+0.130 [Curt Coder]
+
+NewBrain AD with Expansion Interface, Grundy Business Systems Ltd, 1981
+
+The Grundy NewBrain was a microcomputer sold in the early 1980s by Grundy Business Systems Ltd of Teddington and Cambridge, England. The model 'AD' also included a one-line, 16-character, vacuum fluorescent (VF) display on the unit which permitted operation with or without a TV screen or monitor - the VF display responded to the cursor keys and scrolled around the screen display area. One additional model was released, but this was a custom version for a pharmaceutical chain, with no screen display - only the VF display - and was never generally discussed (source: http://en.wikipedia.org/wiki/Grundy_NewBrain).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Preliminary
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.172: Machine removed.
+- 0.142: Renamed (newbraie) to (newbraineim).
+- 0.130: Curt Coder added NewBrain AD with Expansion Interface system.
+
+ROMSET:
+57344 / 7 files / 32.18Kb packed
+
+$end
+$info=nms8270
+$mame
+0.155 [Wilbert Pol]
+
+NMS-8270 (Prototype) (MSX2), Philips, 19?
+
+<no certified information found>
+
+STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+msx1_cass.xml, msx2_flop.xml, msx1_flop.xml, msx2_cart.xml and msx1_cart.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.156: Machine removed.
+- 0.155: Wilbert Pol added Philips NMS-8270 (Prototype) system.
+
+ROMSET:
+98304 / 4 files / 70.00Kb packed
+
+$end
+$info=npresto
+$mame
+0.185 [hap, Berger]
+
+Presto (Novag), Novag, 1984
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.222: Machine removed.
+- 0.185: hap and Berger added Novag Presto system.
+
+ROMSET:
+2048 bytes in 1 file / 1.98Kb packed
+
+$end
+$info=o2_rom12
+$mame
+0.155
+
+Odyssey 2 12K Carts, ???, ????
+
+WIP:
+- 0.224: Device removed.
+- 0.155: Added Odyssey 2 12K Carts device.
+
+$end
+$info=o2_rom16
+$mame
+0.155
+
+Odyssey 2 16K Carts, ???, ????
+
+WIP:
+- 0.224: Device removed.
+- 0.155: Added Odyssey 2 16K Carts device.
+
+$end
+$info=osborne1_daisy
+$mame
+0.162
+
+Osborne 1 daisy, ???, ????
+
+WIP:
+- 0.168: Device removed.
+- 0.162: Added Osborne 1 daisy device.
+
+$end
+$info=pc_fdc_at
+$mame
+0.149u1
+
+PC FDC (AT), ???, ????
+
+WIP:
+- 0.221: Device removed.
+- 0.186: Changed description to 'PC FDC (AT)'.
+- 0.149u1: Added PC FDC AT device.
+
+$end
+$info=pc_kbdc_slot
+$mame
+0.149u1
+
+PC keyboard port, ???, ????
+
+WIP:
+- 0.227: Device removed.
+- 0.186: Changed description to 'PC keyboard port'.
+- 0.149u1: Added PC_KBDC_SLOT device.
+
+$end
+$info=rrd45
+$mame
+0.204
+
+DEC RRD45, ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.204: Added DEC RRD45 device.
+
+$end
+$info=sag_bb4
+$mame
+0.177 [hap, Kevin Horton]
+
+Select-A-Game: Baseball 4, Entex, 1981
+
+The Entex Select-a-game is a handheld game system released in 1981 by Entex Industries. Entex released six games for the system before they dropped support in 1982 in favor of the Entex Adventure Vision. The Select-a-Game used a 7 x 16 vacuum fluorescent display (VFD) array of large dots as the main display. It could display two colors, red and blue. These were combined with static overlays for each game. Together they made the display. The system was basically a display and controller for the games with no built-in processor power. Each game cartridge contained a microprocessor programmed with the appropriate game code in it. In this respect, it was very similar to the concept of Milton Bradley's Microvision system released a few years earlier. The system could be powered by 4 C batteries, or by an external A/C power supply. The power supply was only available by mail-order, and as such is exceptionally hard to find today (but a common universal A/C adapter will work with the system). The games released for the system were: Space Invaders 2, Basketball 3, Football 4, Pinball, Baseball 4, Pac-Man 2, Battleship (not released) and Turtles (not released). Space Invaders 2 came with the system. In late 1981, Entex was sued by Coleco, which held the licensing rights to handheld versions of Pac-Man at the time, for copyright infringement over their upcoming release of Pac-Man 2. The game was pulled shortly after release as part of the settlement. Because of this, Pac-Man 2 is the rarest game released for the system. The game cartridges play very similar to their hand held counterparts (Entex made quite a few hand held games such as Space Invaders 2, Basketball 3, Pac-Man 2, etc.). (source: https://en.wikipedia.org/wiki/Entex_Select-A-Game).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.221: Machine removed.
+- 0.177: hap and Kevin Horton added Entex Select-A-Game: Baseball 4 system.
+
+ROMSET:
+4352 bytes in 1 file / 2.82Kb packed
+
+$end
+$info=sag_pb
+$mame
+0.177 [hap, Kevin Horton]
+
+Select-A-Game: Pinball, Entex, 1981
+
+The Entex Select-a-game is a handheld game system released in 1981 by Entex Industries. Entex released six games for the system before they dropped support in 1982 in favor of the Entex Adventure Vision. The Select-a-Game used a 7 x 16 vacuum fluorescent display (VFD) array of large dots as the main display. It could display two colors, red and blue. These were combined with static overlays for each game. Together they made the display. The system was basically a display and controller for the games with no built-in processor power. Each game cartridge contained a microprocessor programmed with the appropriate game code in it. In this respect, it was very similar to the concept of Milton Bradley's Microvision system released a few years earlier. The system could be powered by 4 C batteries, or by an external A/C power supply. The power supply was only available by mail-order, and as such is exceptionally hard to find today (but a common universal A/C adapter will work with the system). The games released for the system were: Space Invaders 2, Basketball 3, Football 4, Pinball, Baseball 4, Pac-Man 2, Battleship (not released) and Turtles (not released). Space Invaders 2 came with the system. In late 1981, Entex was sued by Coleco, which held the licensing rights to handheld versions of Pac-Man at the time, for copyright infringement over their upcoming release of Pac-Man 2. The game was pulled shortly after release as part of the settlement. Because of this, Pac-Man 2 is the rarest game released for the system. The game cartridges play very similar to their hand held counterparts (Entex made quite a few hand held games such as Space Invaders 2, Basketball 3, Pac-Man 2, etc.). (source: https://en.wikipedia.org/wiki/Entex_Select-A-Game).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.221: Machine removed, move select a game to its own driver [hap].
+- 0.177: hap and Kevin Horton added Entex Select-A-Game: Pinball system.
+
+ROMSET:
+4352 bytes in 1 file / 2.77Kb packed
+
+$end
+$info=sag_si2
+$mame
+0.177 [hap, Kevin Horton]
+
+Select-A-Game: Space Invader 2, Entex, 1981
+
+The Entex Select-a-game is a handheld game system released in 1981 by Entex Industries. Entex released six games for the system before they dropped support in 1982 in favor of the Entex Adventure Vision. The Select-a-Game used a 7 x 16 vacuum fluorescent display (VFD) array of large dots as the main display. It could display two colors, red and blue. These were combined with static overlays for each game. Together they made the display. The system was basically a display and controller for the games with no built-in processor power. Each game cartridge contained a microprocessor programmed with the appropriate game code in it. In this respect, it was very similar to the concept of Milton Bradley's Microvision system released a few years earlier. The system could be powered by 4 C batteries, or by an external A/C power supply. The power supply was only available by mail-order, and as such is exceptionally hard to find today (but a common universal A/C adapter will work with the system). The games released for the system were: Space Invaders 2, Basketball 3, Football 4, Pinball, Baseball 4, Pac-Man 2, Battleship (not released) and Turtles (not released). Space Invaders 2 came with the system. In late 1981, Entex was sued by Coleco, which held the licensing rights to handheld versions of Pac-Man at the time, for copyright infringement over their upcoming release of Pac-Man 2. The game was pulled shortly after release as part of the settlement. Because of this, Pac-Man 2 is the rarest game released for the system. The game cartridges play very similar to their hand held counterparts (Entex made quite a few hand held games such as Space Invaders 2, Basketball 3, Pac-Man 2, etc.). (source: https://en.wikipedia.org/wiki/Entex_Select-A-Game).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.221: Machine removed, move select a game to its own driver [hap].
+- 0.177: hap and Kevin Horton added Entex Select-A-Game: Space Invader 2 system.
+
+ROMSET:
+4352 bytes in 1 file / 2.51Kb packed
+
+$end
+$info=slc1a
+$mame
+0.208 [kaiOr]
+
+Schach- und Lerncomputer SLC 1 (prototype?), Dieter Scheuschner, 1989
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.232: Machine removed.
+- 0.208: kaiOr added Dieter Scheuschner Schach- und Lerncomputer SLC 1 (prototype?) system.
+
+ROMSET:
+4096 bytes in 1 file / 3.49Kb packed
+
+$end
+$info=sn74s381
+$mame
+0.211
+
+TI SN74S381 ALU / Function Generator, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added TI SN74S381 ALU / Function Generator device.
+
+$end
+$info=srarb
+$mame
+0.186
+
+InterPro SRARB, ???, ????
+
+WIP:
+- 0.192: Device removed.
+- 0.186: Added InterPro SRARB device.
+
+$end
+$info=super9ccfr
+$mame
+0.175 [hap]
+
+Super 9 Sensory Chess Challenger (French), Fidelity Electronics, 1983
+
+The chess computer containing the program of Fidelity Prestige on slower hardware Fidelity Chess Challenger Sensory Champion and with the optics of the Fidelity Sensory 9. The exact type designation was Fidelity Super 9 Sensory Chess Challenger, who "DeLuxe" represented the noble wood trim (Source, translated from German: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Super_9_Sensory_Chess_Challenger).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Pdf manual.
+
+WIP:
+- 0.208: Removed machine.
+- 0.175: hap added Fidelity Electronics Super 9 Sensory Chess Challenger (French) system.
+
+ROMSET:
+30720 bytes in 5 files / 5.16Kb packed
+
+$end
+$info=super9ccg
+$mame
+0.175 [hap]
+
+Super 9 Sensory Chess Challenger (German), Fidelity Electronics, 1983
+
+The chess computer containing the program of Fidelity Prestige on slower hardware Fidelity Chess Challenger Sensory Champion and with the optics of the Fidelity Sensory 9. The exact type designation was Fidelity Super 9 Sensory Chess Challenger, who "DeLuxe" represented the noble wood trim (Source, translated from German: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Super_9_Sensory_Chess_Challenger).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Pdf manual.
+
+WIP:
+- 0.208: Removed machine.
+- 0.175: hap added Fidelity Electronics Super 9 Sensory Chess Challenger (German) system.
+
+ROMSET:
+30720 bytes in 5 files / 5.94Kb packed
+
+$end
+$info=super9ccsp
+$mame
+0.175 [hap]
+
+Super 9 Sensory Chess Challenger (Spanish), Fidelity Electronics, 1983
+
+The chess computer containing the program of Fidelity Prestige on slower hardware Fidelity Chess Challenger Sensory Champion and with the optics of the Fidelity Sensory 9. The exact type designation was Fidelity Super 9 Sensory Chess Challenger, who "DeLuxe" represented the noble wood trim (Source, translated from German: http://www.schach-computer.info/wiki/index.php?title=Fidelity_Super_9_Sensory_Chess_Challenger).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.175: hap added Fidelity Electronics Super 9 Sensory Chess Challenger (Spanish) system.
+
+ROMSET:
+30720 bytes in 5 files / 6.22Kb packed
+
+$end
+$info=sv328n80
+$mame
+0.121 [Tomas Karlsson]
+
+SVI-328 (NTSC) + SVI-806 80 column card, Spectravideo, 1983
+
+The Spectravideo SV-328 was the prototype for the MSX design.  But there were some small differences, making the 318/328 incompatible with MSX. Some of the differences where the BIOS, I/O ports and disk format.  But this didn't stop Spectravideo from using the MSX story in their marketing of the 318/328. Some of the marketing material for the SV-318/328 is more or less telling that the computers will run MSX software (source: http://www.samdal.com/svhistory.htm).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+svi318_flop.xml, svi318_cass.xml and svi318_cart.xml.
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.172: Machine removed.
+- 0.121: Tomas Karlsson added SVI-328 (NTSC) + SVI-806 80 column card system.
+
+ROMSET:
+8192 / 2 files / 2.65Kb packed
+
+$end
+$info=sv328p80
+$mame
+0.121 [Tomas Karlsson]
+
+SVI-328 (PAL) + SVI-806 80 column card, Spectravideo, 1983
+
+The Spectravideo SV-328 was the prototype for the MSX design.  But there were some small differences, making the 318/328 incompatible with MSX. Some of the differences where the BIOS, I/O ports and disk format.  But this didn't stop Spectravideo from using the MSX story in their marketing of the 318/328. Some of the marketing material for the SV-318/328 is more or less telling that the computers will run MSX software (source: http://www.samdal.com/svhistory.htm).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+svi318_flop.xml, svi318_cass.xml and svi318_cart.xml.
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.172: Machine removed.
+- 0.121: Tomas Karlsson added SVI-328 (PAL) + SVI-806 80 column card system.
+
+ROMSET:
+8192 / 2 files / 2.65Kb packed
+
+$end
+$info=svi603
+$mame
+0.101 [Tomas Karlsson]
+
+SVI-603 Coleco Game Adapter, Spectravideo, 1983
+
+We admit that Colecovision with its many advanced features provides some of the most thrilling, realistic video game action in the world.  But why buy a Colecovision machine that only lets you play video games when, for just a little more money, you can play all the great games from Coleco and have you very own computer? It sounds too good to be true, but Spectavideo's unique Colecovison Game Adapter makes it possible. This adapter easily hooks up to the SV-318 og SV-329 (source: http://www.samdal.com/svperipherals.htm).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+coleco.xml.
+
+RESOURCES:
+Cabinet picture and pdf manual.
+
+WIP:
+- 0.172: Machine removed.
+- 0.153: Renamed (colecob) to (svi603).
+- 0.101: Tomas Karlsson added Spectravideo SVI-603 Coleco Game Adapter system.
+
+ROMSET:
+8192 / 1 file / 5.56Kb packed
+
+$end
+$info=swiml
+$mame
+0.149u1
+
+Apple SWIM (Sander/Woz Integrated Machine) (legacy), Apple Inc., ????
+
+WIP:
+- 0.230: Device removed.
+- 0.222: Renamed (swim) to (swiml) and changed description to 'Apple SWIM (Sander/Woz Integrated Machine) (legacy)'.
+- 0.205: Bugfix#7177: [Documentation] swim: In the description of the "swim" device (src/mame/machine/swim.cpp) the closing bracket at the end of the field is missing. Changed description to 'Apple SWIM (Steve Woz Integrated Machine)' [AntoPISA].
+- 0.186: Changed description to 'Apple SWIM (Steve Woz Integrated Machine'.
+- 0.149u1: Added Apple SWIM (Steve Woz Integrated Machine) device.
+
+$end
+$info=tbaskb
+$mame
+0.183 [hap, Sean Riddle]
+
+Electronic Basketball (Tandy), Tandy Corporation, 1979
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+Cabinet picture.
+
+WIP:
+- 0.230: Machine removed.
+- 0.221: Changed manufacturer to 'Tandy Corporation'.
+- 0.183: hap and Sean Riddle added Tandy Radio Shack Electronic Basketball system.
+
+ROMSET:
+1024 bytes in 1 file / 9.5Kb packed
+
+$end
+$info=tdc1008
+$mame
+0.211
+
+TRW TDC1008 Multiplier-Accumulator, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added TRW TDC1008 Multiplier-Accumulator device. Emulated the TRW TDC1008 Multiplier-Accumulator [Ryan Holtz].
+
+$end
+$info=ti99_4qe
+$mame
+0.149u1 [Michael Zapf]
+
+TI99/4QI Home Computer (Europe), Texas Instruments, 1983
+
+In August of 1983 TI released the TI-99/4A QI. Though this name was not official for the console, it was what the motherboard was designated. QI stood for Quality Improved. No visual changes were made to the exterior of the console, and in fact they are very hard to distinguish from the beige models. On the other hand, major changes were made to the internal components of the QI. We will take a look at these changes a little later (source: http://www.mainbyte.com/ti99/computers/ti99qi.html).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+ti99_cart.xml.
+
+WIP:
+- 0.174: Machine removed.
+- 0.149u1: Michael Zapf added TI99/4QI Home Computer (Europe) system.
+
+ROMSET:
+26624 / 4 files / 14.47Kb packed
+
+$end
+$info=ti99_fdc_leg
+$mame
+0.162
+
+TI-99 Standard DSSD Floppy Controller LEGACY, ???, ????
+
+WIP:
+- 0.163: Device removed.
+- 0.162: Added TI-99 Standard DSSD Floppy Controller LEGACY device.
+
+$end
+$info=ti99_grom
+$mame
+0.162
+
+TI-99 GROM device, ???, ????
+
+WIP:
+- 0.173: Device removed.
+- 0.162: Added TI-99 GROM device device.
+
+$end
+$info=ti99_video
+$mame
+0.162
+
+TI99 STD Video subsystem, ???, ????
+
+WIP:
+- 0.173: Device removed.
+- 0.162: Added TI99 STD Video subsystem device.
+
+$end
+$info=ti998_speech
+$mame
+0.165
+
+TI-99/8 Onboard Speech synthesizer, ???, ????
+
+WIP:
+- 0.173: Device removed.
+- 0.165: Added TI-99/8 Onboard Speech synthesizer device.
+
+$end
+$info=tmc208k
+$mame
+0.211
+
+TRW TMC208K 8x8-bit Multiplier, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added TRW TMC208K 8x8-bit Multiplier device. Added device for the TRW TMC208K/TMC28KU 8x8-bit Parallel Multiplier [Ryan Holtz].
+
+$end
+$info=tmc28ku
+$mame
+0.211
+
+TRW TMC28KU 8x8-bit Multiplier, ???, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.211: Added TRW TMC28KU 8x8-bit Multiplier device.
+
+$end
+$info=tmp95c063
+$mame
+0.184
+
+Toshiba TMP95C063, Toshiba, ????
+
+WIP:
+- 0.222: Device removed.
+- 0.196: Changed description to 'Toshiba TMP95C063' [Angelo Salese].
+- 0.184: Added TMP95C063 device.
+
+$end
+$info=torchh21
+$mame
+0.169 [Nigel Barnes]
+
+Torch CH240/21, Torch Computers, 1982
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+bbc_torch_flop.xml, bbca_cass.xml, bbcb_cass.xml, bbcb_flop.xml and bbcb_orig_flop.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.218: Machine removed.
+- 0.169: Nigel Barnes added Torch CH240/21 system.
+
+ROMSET:
+106496 bytes in 7 files / 26.9Kb packed
+
+$end
+$info=tti
+$mame
+0.192 [Robbbert]
+
+unknown TTI SCSI host adapter, Transitional Technology Inc, 1989
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.222: Machine removed.
+- 0.192: Robbbert added Transitional Technology Inc unknown TTI SBC system.
+
+ROMSET:
+65536 bytes in 2 files / 24.5Kb packed
+
+$end
+$info=u8106
+$mame
+0.149u1 [Nicola Salmoria]
+
+U8106, ???, ????
+
+WIP:
+- 0.226: Device removed.
+- 0.149u1: Nicola Salmoria added U8106 device.
+
+$end
+$info=unkunsp
+$mame
+0.217 [zhongtiao1]
+
+unknown unSP-based handheld, M&D, 200?
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Unemulated
+Graphics: Good
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.225: Machine removed.
+- 0.224: Renamed (unkmandd) to (unkunsp) and changed description to 'unknown unSP-based handheld'.
+- 0.217: zhongtiao1 added unknown M&D handheld system.
+
+ROMSET:
+4194304 bytes in 1 file / 1.37Mb packed
+
+$end
+$info=upd7201_new
+$mame
+0.184
+
+NEC uPD7201 MPSC (new), Nippon Electric Company, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.187: Renamed (upd7201n) to (upd7201_new) and changed description to 'NEC uPD7201 MPSC (new)'.
+- 0.184: Added UPD 7201 device.
+
+$end
+$info=v9938_video
+$mame
+0.162
+
+TI99 EXP Video subsystem, ???, ????
+
+WIP:
+- 0.173: Device removed.
+- 0.162: Added TI99 EXP Video subsystem device.
+
+$end
+$info=vccfr
+$mame
+0.170 [plgDavid]
+
+Voice Chess Challenger (French), Fidelity Electronics, 1979
+
+Fidelity Voice Chess Challenger (model VCC). The manual claims infinite levels but it is actually 10 levels from CL-1 to CL-9 and then CLH, which is the infinite one where the computer thinks without limited time (you can stop the search). It has a very robotic voice. You can turn the voice off. Level 1 is for beginners and levels 6 and 7 are for tournament, being 6 for practice and 7 for tournament teacher. There is a test program that can be used for diagnostics and to confirm the machine is working fine. This is one example where we can see the many "names" for Fidelity. The manual states "Fidelity Electronics", the warranty card says "Fidelity Computer Products", but it is the same company (source: http://www.ismenio.com/chess_fidelity_vcc.html).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.170: plgDavid added Fidelity Electronics Voice Chess Challenger (French) system.
+
+ROMSET:
+20480 bytes in 4 files / 5.16Kb packed
+
+$end
+$info=vccg
+$mame
+0.170 [plgDavid]
+
+Voice Chess Challenger (German), Fidelity Electronics, 1979
+
+Fidelity Voice Chess Challenger (model VCC). The manual claims infinite levels but it is actually 10 levels from CL-1 to CL-9 and then CLH, which is the infinite one where the computer thinks without limited time (you can stop the search). It has a very robotic voice. You can turn the voice off. Level 1 is for beginners and levels 6 and 7 are for tournament, being 6 for practice and 7 for tournament teacher. There is a test program that can be used for diagnostics and to confirm the machine is working fine. This is one example where we can see the many "names" for Fidelity. The manual states "Fidelity Electronics", the warranty card says "Fidelity Computer Products", but it is the same company (source: http://www.ismenio.com/chess_fidelity_vcc.html).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.170: plgDavid added Fidelity Electronics Voice Chess Challenger (German) system.
+
+ROMSET:
+20480 bytes in 4 files / 5.94Kb packed
+
+$end
+$info=vccsp
+$mame
+0.170 [Berger]
+
+Voice Chess Challenger (Spanish), Fidelity Electronics, 1979
+
+Fidelity Voice Chess Challenger (model VCC). The manual claims infinite levels but it is actually 10 levels from CL-1 to CL-9 and then CLH, which is the infinite one where the computer thinks without limited time (you can stop the search). It has a very robotic voice. You can turn the voice off. Level 1 is for beginners and levels 6 and 7 are for tournament, being 6 for practice and 7 for tournament teacher. There is a test program that can be used for diagnostics and to confirm the machine is working fine. This is one example where we can see the many "names" for Fidelity. The manual states "Fidelity Electronics", the warranty card says "Fidelity Computer Products", but it is the same company (source: http://www.ismenio.com/chess_fidelity_vcc.html).
+
+DRIVER STATUS:
+Emulation: Preliminary
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.170: Berger added Fidelity Electronics Voice Chess Challenger (Spanish) system.
+
+ROMSET:
+20480 bytes in 4 files / 6.22Kb packed
+
+$end
+$info=volt_reg
+$mame
+0.179
+
+Voltage Regulator, ???, ????
+
+WIP:
+- 0.226: Device removed.
+- 0.179: Added Voltage Regulator device.
+
+$end
+$info=vscfr
+$mame
+0.171 [hap]
+
+Voice Sensory Chess Challenger (French), Fidelity Electronics, 1980
+
+This has a very distinctive 70/80's robot voice. The carrying case comes with a key. It has a random play feature where the computer selects a random move from the good ones it has found. It could be hooked up to a printer. It anounces mate in two. You can turn the voice on and off and control the volume (high or low). You can also limit voice anouncements to illegal moves and check warnings. It has a built in chess clock and you can set uyp the time to play (source: http://www.ismenio.com/chess_vscc.html).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.171: hap added Fidelity Electronics Voice Sensory Chess Challenger (French) system.
+
+ROMSET:
+28672 bytes in 4 files / 5.16Kb packed
+
+$end
+$info=vscg
+$mame
+0.171 [hap]
+
+Voice Sensory Chess Challenger (German), Fidelity Electronics, 1980
+
+This has a very distinctive 70/80's robot voice. The carrying case comes with a key. It has a random play feature where the computer selects a random move from the good ones it has found. It could be hooked up to a printer. It anounces mate in two. You can turn the voice on and off and control the volume (high or low). You can also limit voice anouncements to illegal moves and check warnings. It has a built in chess clock and you can set uyp the time to play (source: http://www.ismenio.com/chess_vscc.html).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.171: hap added Fidelity Electronics Voice Sensory Chess Challenger (German) system.
+
+ROMSET:
+28672 bytes in 4 files / 5.94Kb packed
+
+$end
+$info=vscsp
+$mame
+0.171 [hap]
+
+Voice Sensory Chess Challenger (Spanish), Fidelity Electronics, 1980
+
+This has a very distinctive 70/80's robot voice. The carrying case comes with a key. It has a random play feature where the computer selects a random move from the good ones it has found. It could be hooked up to a printer. It anounces mate in two. You can turn the voice on and off and control the volume (high or low). You can also limit voice anouncements to illegal moves and check warnings. It has a built in chess clock and you can set uyp the time to play (source: http://www.ismenio.com/chess_vscc.html).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Good
+Graphics: Good
+Save State: Supported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.208: Removed machine.
+- 0.171: hap added Fidelity Electronics Voice Sensory Chess Challenger (Spanish) system.
+
+ROMSET:
+28672 bytes in 4 files / 6.22Kb packed
+
+$end
+$info=vsmilef
+$mame
+0.157 [segher]
+
+V.Smile (France), V-Tech, 2005
+
+The V.Smile is an educational game system by VTech. It is designed for children ages 3 to 6, but offers software designed for several age groups between 3-9. Titles are available on ROM cartridges called 'Smartridges', to play off the system's educational nature. The graphics are primarily sprite-based. The console is often sold bundled with a particular game. Several variants of the V.Smile console are sold including handheld versions, or models with added functionality such as touch tablet integrated controllers or microphones. The V-Motion is a major variant with its own software lineup that includes motion sensitive controllers and has Smartriges designed to take advantage of motion-related "active learning". The V-Motion and Smartriges however are fully backwards compatible with other V.Smile variants and V.Smile Smartridges, and a V-Motion Smartrige can even be played on V.Smile console or handheld, albeit with limited functionality (source: http://en.wikipedia.org/wiki/V.Smile).
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Imperfect
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+vsmile_cart.xml.
+
+RESOURCES:
+-
+
+WIP:
+- 0.218: Machine removed.
+- 0.206: Machine promoted to working [Ryan Holtz].
+- 0.157: segher added V-Tech V-Smile (France) system.
+
+ROMSET:
+2097152 bytes in 1 file / 1003.80Kb packed
+
+$end
+$info=vsmileg
+$mame
+0.187 [Sean Riddle]
+
+V.Smile (Germany), V-Tech, 2005
+
+<No certified information found. If you have info on this machine, please contact us!>
+
+DRIVER STATUS:
+Emulation: Good
+Color: Good
+Sound: Imperfect
+Graphics: Imperfect
+Save State: Unsupported
+
+SOFTWARE LIST:
+-
+
+RESOURCES:
+-
+
+WIP:
+- 0.218: Machine removed.
+- 0.206: Machine promoted to working [Ryan Holtz].
+- 0.187: Sean Riddle added V-Tech V-Smile (Germany) system.
+
+ROMSET:
+2097152 bytes in 1 file / 999Kb packed
+
+$end
+$info=xm3301
+$mame
+0.204
+
+Toshiba XM-3301TA CD-ROM, ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.204: Added Toshiba XM-3301TA CD-ROM device.
+
+$end
+$info=xm5301sun
+$mame
+0.204
+
+Toshiba XM-5301B Sun 4x CD-ROM, ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.204: Added Toshiba XM-5301B Sun 4x CD-ROM device.
+
+$end
+$info=xm5401sun
+$mame
+0.204
+
+Toshiba XM-5401B Sun 4x CD-ROM, ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.204: Added Toshiba XM-5401B Sun 4x CD-ROM device.
+
+$end
+$info=xm5701
+$mame
+0.204
+
+Toshiba XM-5701B 12x CD-ROM, ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.204: Added Toshiba XM-5701B 12x CD-ROM device.
+
+$end
+$info=xm5701sun
+$mame
+0.204
+
+Toshiba XM-5701B Sun 12x CD-ROM, ???, ????
+
+WIP:
+- 0.206: Device removed.
+- 0.204: Added Toshiba XM-5701B Sun 12x CD-ROM device.
+
+$end
+$info=z80scc
+$mame
+0.184
+
+Z80 SCC, ???, ????
+
+WIP:
+- 0.199: Device removed.
+- 0.192: Ported improvements from z80sio and cleaned up code [Joakim Larsson Edstrom].
+- 0.191: Return CPU-specific default vector when no interrupt found to acknowledge [Joakim Larsson Edstrom]. Fixed interrupt mask generation [Patrick Mackinlay].
+- 0.188: Added basic wait/DMA request support, renamed WRDY to WREQ to match datasheet [Patrick Mackinlay].
+- 0.187: Added support for resetting RX interrupts/status by reading Rx FIFO through RR3. Gets virtpool driver terminal a bit further, but not all the way (no visible difference) [Joakim Larsson Edstrom].
+- 0.186: Implemented Reset Tx Interrupt Pending Command (fixes virtpool) [Joakim Larsson Edstrom].
+- 0.176: (z80scc) Fix dropped character problem for sun4_75, and fix edge cases where datasheet recommendations are ignored allowing sun3/sun4 to recognise keyboard and hk68v10 to work with correct SCC clock [Joakim Larsson Edstrom].
+- 0.184: Added Z80 SCC device.
+
+$end
+$info=z80sio0
+$mame
+0.149u1
+
+Z80 SIO/0, ???, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.149u1: Added Z80 SIO/0 device.
+
+$end
+$info=z80sio1
+$mame
+0.184
+
+Z80 SIO/1, ???, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.184: Added Z80 SIO/1 device.
+
+$end
+$info=z80sio2
+$mame
+0.149u1
+
+Z80 SIO/2, ???, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.149u1: Added Z80 SIO/2 device.
+
+$end
+$info=z80sio3
+$mame
+0.184
+
+Z80 SIO/3, ???, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.184: Added Z80 SIO/3 device.
+
+$end
+$info=z80sio4
+$mame
+0.184
+
+Z80 SIO/4, ???, ????
+
+WIP:
+- 0.220: Device removed.
+- 0.184: Added Z80 SIO/4 device.
+
+$end
+$info=alnchase.cpp
+$drv
+0.159 [hap]
+
+WIP:
+- 28/02/2015 r36140: Moved all renderers to osd/modules/render [CourierSud].
+- 0.159: hap added alnchase.c skeleton driver.
+- 23/02/2015 r35232: Disabled another Visual Studio warning [Oliver Stoneberg].
+- 12/02/2015 r35006: Use user_settings from render_container [CourierSud].
+
+$end
+$info=amaztron.cpp
+$drv
+0.157 [hap, Sean Riddle]
+
+WIP:
+- 0.157: hap and Sean Riddle added amaztron.c driver.
+
+$end
+$info=c65_old.cpp
+$drv
+0.161 [Miodrag Milanovic]
+
+WIP:
+- 0.161: Added c65_old.cpp driver.
+- 10/04/2015 r37085: Some changes for FreeBSD and Solaris, will be sent upstream as well [Miodrag Milanovic].
+
+$end
+$info=ccs300.cpp
+$drv
+0.149u2 [Robbbert]
+
+WIP:
+- 0.222: Driver removed.
+- 0.150: Robbbert added ccs300.cpp skeleton driver.
+- 10/09/2013 r25289: WIP rearranging ccs systems. Deleted ccs2422.c driver [Robbbert].
+- 12/09/2012 r17843: Removed local macros since macros with same name but different syntax will be used in general [Miodrag Milanovic].
+- 12/04/2012 r14901: Some AM_BASE -> AM_SHARE [Miodrag Milanovic].
+- 0.136: Robbbert added ccs2422.cpp driver.
+
+$end
+$info=cd32.cpp
+$drv
+0.132u2 [Mariusz Wojcieszek]
+
+WIP:
+- 01/05/2013 r22624: Misc consistency fixes, mostly to have common shortnames for the same games across different lists [Fabio Priuli].
+- 27/10/2012 r18736: Deleted: a3000.c. More Amiga movement + fixes by David haywood [Miodrag Milanovic].
+- 0.141u3: Changed cubocd32.c to cd32.c driver, machine\cubocd32.c to machine\cd32.c and includes\cubocd32.h to includes\cd32.h. Amiga fixes [Roberto Zandona]: Removed additional 2 cycles, in move operation, for non-Agnus registers. Set to #0 the start cycle in the copper operation. David Haywood refactored the CD32 code base to eliminate duplicate code between MAME and MESS. Atari Ace cleaned up a few include files in CD32 driver.
+- 0.140u2: Mariusz Wojcieszek fixed problems with i2cmem. Cubo CD32 games now save and load settings properly.
+- 0.140u1: Mariusz Wojcieszek fixed crash in machine\cubocd32.c (akiko_frame_proc).
+- 0.139u4: Atari Ace converted Amiga drivers to use driver_devices. Merged common code between legacy Amiga and AGA video systems.
+- 0.138u4: Removed machine\i2cmemdev.c/h. smf turned i2cmem into a C++ device & ditched the unused legacy device.
+- 0.136u2: Curt Coder refactored the CIA 6526 interface, adding SP/CNT callbacks. Fixed serial transfer.
+- 0.135u4: Curt Coder fixed CIA6526 FLAG handling and slight interface cleanup.
+- 0.134: Robiza fixed 6526 CIA PRA, PRB, DDRA and DDRB ports and added partial fix to 6526 CIA timer: Avoid timer's desync in read count operation.
+- 0.133u5: Robiza added different TOD implementation for CIA6526 and CIA8520.
+- 0.132u4: Mariusz Wojcieszek fixed Cubo CD32 framerate to 50Hz. Better fix for Amiga AGA ddf_stop_pixel, to avoid breaking Amiga 1200 startup screen.
+- 0.132u3: Mariusz Wojcieszek fixed AGA display window start and stop (fixes startup screen and lsrquiz & lsrquiz2 missing graphics). Changed visible area to 703x272. Added dipswitches 'DSW1 6' and 'DSW2 1->8'.
+- 0.132u2: Cubo CD32 update [Stephane Humbert]: Fixed inputs and found why inputs are not read (protection ?), hacked to work now. Amiga AGA update [Mariusz Wojcieszek]: Fixed sprite data fetching and sprite colors.
+- 0.130u3: Added machine\i2cmemdev.c/h. Samuele Zannoli added device-based implementations of the EEPROM and I2C devices.
+- 0.130u2: Added video\amigaaga.c. WIP driver for Cubo CD32 [Mariusz Wojcieszek]: AGA palette. AGA bitplane data fetching. support for up to 8 standard bitplanes. HAM8 mode.
+- 0.129u5: Dirk Best added support for the /PC output pin to the CIA emulation.
+- 0.129u4: Nathan Woods changed 6526cia to use devcb.
+- 0.129u1: Nathan Woods added a validity check to the 6526 CIA emulation.
+- 0.128u7: Nathan Woods added running_machine callbacks for the Amiga code.
+- 0.128u5: Made the 6526/8520 CIA implementations be devices [Nathan Woods]: Added differentiation between the r1 and r2 versions of the 6526; not acting on it yet.
+- 0.125u1: Robiza added feature to the cia6526: In READ operation the value can be forced by a external circuit; this feature is necessary for MESS.
+- 0.123u4: Zsolt Vasvari converted Amiga based games to partial updating and proper scanline based timers.
+- 0.122u4: Updated Amiga driver to use formal XTALs [Dirk Best].
+- 0.121u1: Nathan Woods added an API to access the current amiga_machine_interface.
+- 0.120u2: Added machine\i2cmem.c. smf added generic I2C bus memory support. Hooked up to the cubocd32 driver.
+- 0.118u5: Added machine\cubocd32.c and includes\cubocd32.h. CuboCD32/Amiga updates [Ernesto Corvi]: Finished implementing the CDROM controller, so now the games boot. Moved the entire Akiko code to machine/cubocd32.c to make things a little more easier to work with. Added CDDA audio support to the CDROM controller and driver. Systems with the AGA chipset no longer connect bit 0 of the CIA that was previously connected to the Overlay pin not connected. Made BLTDDAT return it's value. This is a readable register which we were not handling. Initialized the SERDATR register upon reset to reflect that the transfer buffer/shift reg is empty. Changed 68EC020 CPU1 clock speed to 14187580 Hz and visible area to 671x272. Added CD/DA sound and dipswitches 'Service Mode' and 'DSW1 2-8'.
+- 0.118u4: Amiga updates [Erneso Corvi]: Implemented ECS-Only BLTCON0L register. Modified the amiga_interface structure to add a nmi callback and a flags variable. Added AGA chipmem mask definition. Added 32 bit data bus support to chipram. It's automatically used if the chipset is AGA. Added clock chip constants in machine/amiga.h for 68k PAL and NTSC, and 68EC00 NTSC. Updates drivers to use those constants. Added convenience macros to determine wether we're running with an ECS chipset, AGA chipset, or 'ECS or AGA chipset'. Changed autoconfig reads to return 0x0000 instead of 0xffff. Fixed MSB value timer reads on the 8520 cia. We were previously only updating the count for the timer when the LSB value was read. Added basic Akiko emulation to the cubocd32 driver. Both the Chunky to Planar converter, and the I2C NVRAM should be fully implemented, however, the CDROM functionality is not complete. It's only enough to make the kickstart pass the Akiko checks. Changed 68EC020 CPU1 clock speed to 14318180 Hz. Added Custom (3579545 Hz) sound and 'DSW1 1' dipswitch.
+- 0.118u3: Amiga system updates [Ernesto Corvi]: Implemented the ECS-only BLTSIZV and BLTSIZH custom registers, and modified BLTSIZE and the blitter to use them. Properly implemented the bit in VPOSR that indicates if we're running on a PAL or NTSC Amiga.
+- 0.117: Peter Rittwage reverted patch to the 6526CIA as it was causing issues with Amiga/Arcadia emulation.
+- 0.115u3: Peter Rittwage fixed bit calculation in 6526cia.c which broke joysticks in the MESS C64 driver.
+- 0.113u2: Changed VSync to 59.997000 Hz.
+- 0.112u2: Mariusz Wojcieszek added cubocd32.c driver.
+
+$end
+$info=cnsector.cpp
+$drv
+0.157 [hap]
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.157: hap added cnsector.c driver.
+
+$end
+$info=comp4.cpp
+$drv
+0.156 [Sean Riddle, hap]
+
+WIP:
+- 06/12/2014 r33701: Few updates for pocket carts [Cowering].
+- 0.156: Sean Riddle and hap added comp4.c driver.
+
+$end
+$info=edracula.cpp
+$drv
+0.159 [hap]
+
+WIP:
+- 28/02/2015 r36140: Moved all renderers to osd/modules/render [CourierSud].
+- 0.159: hap added edracula.c skeleton driver.
+- 23/02/2015 r35232: Disabled another Visual Studio warning [Oliver Stoneberg].
+
+$end
+$info=elecbowl.cpp
+$drv
+0.160 [hap, Kevin Horton]
+
+WIP:
+- 10/04/2015 r37085: Some changes for FreeBSD and Solaris, will be sent upstream as well [Miodrag Milanovic].
+- 0.160: hap and Kevin Horton added elecbowl.cpp driver.
+
+$end
+$info=elecdet.cpp
+$drv
+0.158 [hap, Sean Riddle]
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.158: hap and Sean Riddle added elecdet.c driver.
+
+$end
+$info=enterp.cpp
+$drv
+0.36b6
+
+WIP:
+- 0.149: Converted the Nick Graphics Chip to be a device. Modernized the Dave sound chip [Fabio Priuli]. Added Guru-readme and fixed setnames [Guru].
+- 23/04/2013 r22509: Made BEEP and RAM devices initialize in constructor of driver classes [Miodrag Milanovic].
+- 18/04/2013 r22444, r22453: Moving some static functions in driver state for MESS drivers plus some other modernization. Some more cleanup [Miodrag Milanovic].
+- 14/04/2013 r22393: Removal of machine().root_device() where appropriate [Miodrag Milanovic].
+- 10/04/2013 r22314: Changed machine().device("maincpu") with m_maincpu in mess tree part [Miodrag Milanovic].
+- 03/10/2012 r18258: Replace some *_DEVICE_HANDLER with _MEMBER calls in MESS section [Miodrag Milanovic].
+- 21/09/2012 r18056: Change from device->machine() to space.machine() in device handlers in order to make next changes easier [Miodrag Milanovic].
+- 13/09/2012 r17859: Massive change, MACHINE_START\RESET, VIDEO_START\RESET and PALETTE_INIT changed to be members of state classes [Miodrag Milanovic].
+- 11/07/2011 r12198: Renamed current floppy implementation to legacy [Miodrag Milanovic].
+- 0.37b3: Updated Enterprise driver with correct aspect ratio, updates to the KC85/4 driver including code to emulate the keyboard / works by poking OS system variables [Kev Thacker].
+- 0.36b6: Added enterp.c driver.
+
+$end
+$info=ex800.cpp
+$drv
+0.121
+
+WIP:
+- 23/04/2013 r22509: Made BEEP and RAM devices initialize in constructor of driver classes [Miodrag Milanovic].
+- 10/04/2013 r22314: Changed machine().device("maincpu") with m_maincpu in mess tree part [Miodrag Milanovic].
+- 19/09/2012 r18016: Modernized INPUT_CHANGED in MESS part of tree [Miodrag Milanovic].
+- 13/09/2012 r17859: Massive change, MACHINE_START\RESET, VIDEO_START\RESET and PALETTE_INIT changed to be members of state classes [Miodrag Milanovic].
+- 03/04/2012 r14845: MESS going modern [Miodrag Milanovic].
+- 0.121: Added ex800.c driver.
+
+$end
+$info=konamim2.cpp
+$drv
+0.144u1 [Ville Linde]
+
+WIP:
+- 0.144u1: Ville Linde added konamim2.cpp driver.
+
+$end
+$info=korgm1.cpp
+$drv
+0.148 [Angelo Salese]
+
+WIP:
+- 16/02/2014 r27700: Note that it is made to work same as before, in some cases it can be more logic to move gfxdevice into subdevice itself then to keep it in main driver [Miodrag Milanovic].
+- 0.148: Added korgm1.c skelton driver. The driver isn't add to mess.lst.
+
+$end
+$info=lx800.cpp
+$drv
+0.133 [Felipe Sanches]
+
+WIP:
+- 10/09/2013 r25301: Modernized the e05a03 device. Basic testing has been done, but regression testing by someone who knows the driver/system would be appreciated [Ivan Vangelista].
+- 23/04/2013 r22509: Made BEEP and RAM devices initialize in constructor of driver classes [Miodrag Milanovic].
+- 26/11/2012 r19156: Replaced all device_t's with actual device classes. Regression test recommended [Curt Coder].
+- 13/09/2012 r17859: Massive change, MACHINE_START\RESET, VIDEO_START\RESET and PALETTE_INIT changed to be members of state classes [Miodrag Milanovic].
+- 0.133: Felipe Sanches added lx800.c driver.
+
+$end
+$info=marywu.cpp
+$drv
+0.170 [Felipe Sanches]
+
+WIP:
+- 0.170: Felipe Sanches added marywu.cpp driver.
+
+$end
+$info=mathmagi.cpp
+$drv
+0.157 [hap]
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.157: hap added mathmagi.c skeleton driver.
+
+$end
+$info=mbdtower.cpp
+$drv
+0.160 [hap and Sean Riddle]
+
+WIP:
+- 04/04/2015 r36928: Parameter naming convention change agreed with GENie maintainer [Miodrag Milanovic].
+- 0.160: hap and Sean Riddle added mbdtower.cpp driver.
+- 25/03/2015 r36617: Fixed Gamart logo, bit 1 of port 0x10 enables transparent pen for the blitter [Angelo Salese].
+
+$end
+$info=merlin.cpp
+$drv
+0.147u3 [Wilbert Pol]
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 06/12/2014 r33701: Few updates for pocket carts [Cowering].
+- 05/11/2014 r33215: Added simon skillswitch, thanks to Simon from http://www.waitingforfriday.com for making a wiring diagram [hap].
+- 04/11/2014 r33199: Small cleanup to merlin.c, it is very similar to simon.c I want to redo the merlin layout later, make it more similar/appealing [hap].
+- 11/06/2013 r23641: Modernized tms1xxx cpu cores [Wilbert Pol].
+- 10/04/2013 r22308, r22314: Unified formating of state class constructors, no functional change. Changed machine().device("maincpu") with m_maincpu in mess tree part [Miodrag Milanovic].
+- 26/11/2012 r19156: Replaced all device_t's with actual device classes. Regression test recommended [Curt Coder].
+- 0.147u3: Wilbert Pol and kevtris added merlin.c driver.
+- 31/10/2012 r18799: Added skeleton driver for Merlin [Wilbert Pol].
+
+$end
+$info=ng_aes.cpp
+$drv
+0.132
+
+WIP:
+- 0.173: Converted AES controllers to work through slot devices. Also, separated more clearly the CD component by the base unit [Fabio Priuli].
+- 11/05/2015 r37716: Add makefile switch to choose linking against bundled OR system expat library [Cesare Falco].
+- 0.157: Fixed save state regressions [Osso].
+- 25/12/2014 r34059: Added missing savestates, fixes reported save state problems [Osso].
+- 28/05/2014 r30690: Use real palette_device [Alex Jackson].
+- 15/05/2014 r30458: Fixed some gfx bugs in midas.c 'livequiz'. Started converting neogeo video/sprite system to a device_reset created base device + number of derived classes NEOGEO_SPRITE_REGULAR is an reference implementation, drawing direct from NEOGEO_SPRITE_OPTIMZIED is a version with predecoded gfx (as we use now) this is the default used by the driver NEOGEO_SPRITE_MIDAS is a version supporting the changes needed by the MIDAS games (mainly 8bpp instead of 4bpp) [David Haywood].
+- 02/05/2014 r30188: Cleanup of image device interfaces [Miodrag Milanovic].
+- 23/04/2014 r29855: Replaced set_irq_acknowledge_callback with proper MCFG_CPU_IRQ_ACKNOWLEDGE_DRIVER/DEVICE [Miodrag Milanovic].
+- 17/04/2014 r29721, r29726: Created memcard as device and removed it from machine/generic. This should be image device instead but did not wish to change behavior for now. Made neogeo card an image device [Miodrag Milanovic].
+- 14/03/2014 r28534: Reverted previous neogeo change, added comment explaining why hack is needed for now [Alex Jack].
+- 25/11/2013 r26414: Unchanged crap code of two years ago is still crap code [Oliver Stoeneberg].
+- 16/07/2013 r24277: Moved some legacy stuff from mconfig.h to mcfglgcy.h [Oliver Stoeneberg].
+- 10/05/2013 r22750: Fixed building mess after YM2610 changes [smf].
+- 18/02/2013 r21156, r21161, r21162 (only for psx.c): NeoGeo modernize. Some MESS modernization [Miodrag Milanovic].
+- 13/02/2013 r21042: Reduce tagmap lookups [Wilbert Pol].
+- 12/02/2013 r20972: Modernization of drivers part 13 [Miodrag Milanovic].
+- 10/02/2013 r20892: Reduce tagmap lookups [Wilbert Pol].
+- 05/02/2013 r20750: Started moving DEVICE_IMAGE_ functions into driver_device classes [Wilbert Pol].
+- 31/01/2013 r20630, r20638: IRQ_CALLBACK modernization part 2, this should give some speed to pc drivers. Modernized some pre/postload calls [Miodrag Milanovic].
+- 08/12/2012 r19398, r19399: ncd, save the internal nvram instead of trying to use memcards like the AES does. Stop "neocdz lresort" and "neocdz kof98" from stomping over their own z80 data [David haywood].
+- 07/12/2012 r19373, r19374, r19375, r19377, r19379, r19380, r19381, r19396: More NeoGeo/cd cleanups, improves sound for ncd. neocd, misc improvements/notes. More Ncd notes etc. Apparently I've fixed this. Also reset the YM2610 when resetting the Z80, seems to avoid some lost sounds in neocdz crsword2 + misc cleanups. Move some ngcd specific code back into the actual driver. Resetting the cdc causes more issues than it solves. Workaround for raster problems in neocdz, let's call it working for now, I only know of one game which fails to load, although the whole lot still needs some polish [David haywood].
+- 06/12/2012 r19355: Further mcd/ncd code reduction [David haywood].
+- 05/12/2012 r19316, r19318, r19320: Move some system specific stuff out of the cdc [David haywood]. Code reduction [Angelo Salese]. Further neocd/scd code reduction [David haywood].
+- 19/11/2012 r19020: Removed some FBAisms and improved code sharing between AES/MVS (the interrupt handling was copy+pasted between the two). From David haywood [Tafoid].
+- 17/11/2012 r18999: Started wrapping some neocd functions in mame code, now sending valid cd commands and some sets are now booting on neocdz in neocd.xml. From David haywood [Tafoid].
+- 15/11/2012 r18971: Initial merge of fba neocd code into ng_aes by David haywood [Miodrag Milanovic].
+- 24/09/2012 r18114: Modernization or timer callbacks part 2 [Miodrag Milanovic].
+- 14/09/2012 r17884: Fixed remaining regressions [Miodrag Milanovic].
+- 13/09/2012 r17859: Massive change, MACHINE_START\RESET, VIDEO_START\RESET and PALETTE_INIT changed to be members of state classes [Miodrag Milanovic].
+- 08/09/2012 r17720: Fixed some warnings about unreachable statements reported by cppcheck [Oliver Stöneberg].
+- 20/03/2012 r14774: Correct several no-boot regressions from Judge's #14738 [R. Belmont].
+- 10/03/2012 r14738: Fixed a bunch of cast align warnings reported by clang [Wilbert Pol].
+- 22/12/2011 r13675: Finished filtering support and added example ng_aes but not yet in hash/neogeo.xml [Miodrag Milanovic].
+- 10/12/2011 r13541: Fixed the bios [Fabio Priuli].
+- 21/11/2011 r13321: Someone has forgotten that ROM_LOAD16_WORD_SWAP is just an alias for ROMX_LOAD (LOADFLAGS). but his list, his wish [Fabio Priuli].
+- 20/11/2011 r13318: Fixed a couple of wrong descriptions (a quote had been put in front of two titles), plus moved loadflags at the end of <rom> for consistency with other lists in neogeo.xml [Fabio Priuli].
+- 23/09/2011 r12925: Fixed neocd and neocdz crashing [Miodrag Milanovic].
+- 06/09/2011 r12799: Hand-checked the most popular English word misspellings and made the appropriate changes. Nearly all of the changes made were in commented areas [Tafoid].
+- 0.132: Added ng_aes.cpp driver.
+
+$end
+$info=novag_supremo.cpp
+$drv
+0.218 [hap]
+
+WIP:
+- 0.229: Merged (novag_supremo.cpp) with (novag_snova.cpp).
+- 0.218: hap added novag_supremo.cpp driver.
+
+$end
+$info=portfoli.cpp
+$drv
+0.140
+
+WIP:
+- 18/10/2014 r32800: More region_ptr_finder conversions [Alex Jackson].
+- 22/09/2014 r32284: Redundant cart_mounted() function since exists() from image device already provides the required service, and added capability to specify endianness of the rom region (otherwise not detectable from fullpath) [Fabio Priuli].
+- 23/04/2014 r29855: Replaced set_irq_acknowledge_callback with proper MCFG_CPU_IRQ_ACKNOWLEDGE_DRIVER/DEVICE [Miodrag Milanovic].
+- 14/03/2014 r28531: Made palette settings for screen explicit and mandatory for ind16 mode [Miodrag Milanovic].
+- 16/02/2014 r27700: Note that it is made to work same as before, in some cases it can be more logic to move gfxdevice into subdevice itself then to keep it in main driver [Miodrag Milanovic].
+- 07/09/2013 r25246: Various updates regarding commented out code, forgotten during past device modernizations. More to come [Ivan Vangelista].
+- 04/08/2013 r24727: Small PALETTE_INIT cleanup [Oliver Stöneberg].
+- 10/06/2013 r23595: Cleanup [Curt Coder].
+- 23/04/2013 r22509: Made BEEP and RAM devices initialize in constructor of driver classes [Miodrag Milanovic].
+- 12/04/2013 r22352: Speaker tag lookup removal, also no need to use universal tag, since easier now to follow [Miodrag Milanovic].
+- 05/02/2013 r20750: Started moving DEVICE_IMAGE_ functions into driver_device classes [Wilbert Pol].
+- 31/01/2013 r20632: IRQ_CALLBACK modernization part 3 [Miodrag Milanovic].
+- 27/01/2013 r20528, r20548: tagmap lookup cleanup [Curt Coder].
+- 03/10/2012 r18258: Replace some *_DEVICE_HANDLER with _MEMBER calls in MESS section [Miodrag Milanovic].
+- 25/09/2012 r18138, r18140: 'TIMER_CALLBACK_DEVICE_MEMBER' modernization, part 1. Some manual cleanup [Miodrag Milanovic].
+- 21/09/2012 r18056: Change from device->machine() to space.machine() in device handlers in order to make next changes easier [Miodrag Milanovic].
+- 13/09/2012 r17859: Massive change, MACHINE_START\RESET, VIDEO_START\RESET and PALETTE_INIT changed to be members of state classes [Miodrag Milanovic].
+- 19/04/2012 r14969: Fixed some regressions [Sandro Ronco].
+- 17/04/2012 r14947: AM_BASE -> AM_SHARE [Miodrag Milanovic].
+- 02/02/2012 r14307, r14312: Centronics converted to C++ and updated MESS code using it. Made centronics a slot device and printer as his "card" device [Miodrag Milanovic].
+- 25/11/201 r13372: State saving cleanup [Curt Coder].
+- 26/04/2011 r11336: Refactored I8255 into a C++ device. This might break something as it is a huge diff [Curt Coder].
+- 0.140: Added portfoli.cpp driver.
+
+$end
+$info=simon.cpp
+$drv
+0.156 [Sean Riddle, hap]
+
+WIP:
+- 06/12/2014 r33701: Few updates for pocket carts [Cowering].
+- 0.156: Sean Riddle and hap added simon.cpp driver.
+- 05/11/2014 r33215: Added simon skillswitch, thanks to Simon from http://www.waitingforfriday.com for making a wiring diagram [hap].
+- 04/11/2014 r33199: Small cleanup to merlin.c, it is very similar to simon.c I want to redo the merlin layout later, make it more similar/appealing [hap].
+
+$end
+$info=slc1a.cpp
+$drv
+0.132 [Sandro Ronco]
+
+WIP:
+- 0.232: Driver removed.
+- 0.208: Renamed (sc1.cpp) to (slc1a.cpp).
+- 26/10/2013 r25850: License tags [Sandro Ronco].
+- 12/04/2013 r22352: Speaker tag lookup removal, also no need to use universal tag, since easier now to follow [Miodrag Milanovic].
+- 26/11/2012 r19156: Replaced all device_t's with actual device classes. Regression test recommended [Curt Coder].
+- 0.132: Sandro Ronco added sc1.cpp driver.
+- 12/05/2009: Skeleton driver.
+
+$end
+$info=splitsec.cpp
+$drv
+0.158
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.158: hap added splitsec.cpp driver.
+- 19/01/2015 r34497: Fixed clang (most likely > 3.4) compile [CourierSud].
+
+$end
+$info=starwbc.cpp
+$drv
+0.157
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.157: hap added starwbc.cpp driver.
+
+$end
+$info=stopthie.cpp
+$drv
+0.133
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 06/12/2014 r33701: Few updates for pocket carts [Cowering].
+- 04/12/2014 r33667: Quiet MESS -validate issues for stopthie.c [Scott Stone].
+- 11/06/2013 r23641: Modernized tms1xxx cpu cores [Wilbert Pol].
+- 10/04/2013 r22314: Changed machine().device("maincpu") with m_maincpu in mess tree part [Miodrag Milanovic].
+- 0.133: Added stopthie.cpp driver.
+
+$end
+$info=tandy12.cpp
+$drv
+0.157 [hap]
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.157: hap added tandy12.cpp skeleton driver.
+
+$end
+$info=tc4.cpp
+$drv
+0.159 [hap]
+
+WIP:
+- 0.159: hap added tc4.cpp driver.
+
+$end
+$info=tmtennis.cpp
+$drv
+0.159
+
+WIP:
+- 28/02/2015 r36140: Moved all renderers to osd/modules/render [CourierSud].
+- 0.159: hap added tmtennis.cpp driver.
+- 23/02/2015 r35232: Disabled another Visual Studio warning [Oliver Stoneberg].
+- 12/02/2015 r35006: Use user_settings from render_container [CourierSud].
+
+$end
+$info=tti.cpp
+$drv
+0.192 [AJR]
+
+WIP:
+- 0.219: Made the two firmware revisions BIOS options [AJR].
+- 0.192: AJR added tti.cpp driver.
+
+$end
+$info=unk3403.cpp
+$drv
+0.157
+
+WIP:
+- 27/02/2015 r36125: Fix resizing on windows [CourierSud].
+- 0.157: hap and Kevin Horton added skeleton driver of unk3403.cpp driver.
+
+$end
+$info=unkmandd.cpp
+$drv
+0.217 [David Haywood]
+
+WIP:
+- 0.224: Driver removed.
+- 0.217: David Haywood added unkmandd.cpp driver.
+
+$end
+#
+#
+#  © 2011/2021 AntoPISA
